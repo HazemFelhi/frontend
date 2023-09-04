@@ -1,0 +1,16 @@
+<svg id="Groupe_2459" data-name="Groupe 2459" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="148.377" height="121.981" viewBox="0 0 148.377 121.981">
+  <defs>
+    <filter id="Ellipse_199" x="89.5" y="7.5" width="58.877" height="58.877" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-color="#9494e0"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Vector" d="M137.945,52.193a38.844,38.844,0,0,0-21.582-13.2A54.013,54.013,0,0,0,106.2,16.817a4.114,4.114,0,0,0-.445-.593C89.442-3.5,62.743-3.43,44.721,6.8,29.295,15.63,16.168,34.245,23.065,60.8,7.268,64.652,0,78.447,0,90.906c0,13.943,9.122,29.591,29.443,31.075h76.982a42.012,42.012,0,0,0,28.4-11.05C153.445,94.466,151,67.619,137.945,52.193Z" transform="translate(0)" fill="#9494e0"/>
+  <ellipse id="Ellipse_5" data-name="Ellipse 5" cx="27.939" cy="27.939" rx="27.939" ry="27.939" transform="translate(91 8.999)" fill="#fff"/>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Ellipse_199)">
+    <ellipse id="Ellipse_199-2" data-name="Ellipse 199" cx="27.939" cy="27.939" rx="27.939" ry="27.939" transform="translate(91 9)" fill="rgba(148,148,224,0.2)"/>
+  </g>
+</svg>

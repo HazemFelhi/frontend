@@ -1,0 +1,10 @@
+<div class="header" *ngIf="!showHeaderFacture   && !showHeaderGestion && !showHeaderUpdate && !showHeaderGest  ">
+    <app-header></app-header>
+  </div>
+  
+  <router-outlet></router-outlet>
+  
+  <div class="footer" class="site-footer" *ngIf="showFooterContact || showFooterAccueil || showFooterApropos || showFooterCatalogue  ||showFooterNew ||showFooterPaquet  ">
+    <app-footer></app-footer>
+  </div>
+  

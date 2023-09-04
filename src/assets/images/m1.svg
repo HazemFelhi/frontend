@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="148.749" height="153.171" viewBox="0 0 148.749 153.171">
+  <defs>
+    <filter id="Vector" x="61.877" y="66.373" width="75.747" height="75.748" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-color="#514a9d"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Vector-2" x="124.917" y="129.332" width="23.833" height="23.839" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur-2"/>
+      <feFlood flood-color="#514a9d"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Groupe_2460" data-name="Groupe 2460" transform="translate(0.001)">
+    <path id="Vector-3" data-name="Vector" d="M54.955,1.159,14.165,16.437C6.378,19.4,0,28.6,0,36.98V97.053c0,6.007,3.931,13.943,8.751,17.5l40.79,30.481c7.194,5.414,18.986,5.414,26.18,0l40.79-30.481c4.821-3.634,8.751-11.5,8.751-17.5V36.98c0-8.306-6.378-17.577-14.165-20.469L70.307,1.233C66.154-.4,59.183-.4,54.955,1.159Z" transform="translate(0 0)" fill="#514a9d"/>
+    <path id="Vector-4" data-name="Vector" d="M33.374,0A33.374,33.374,0,1,0,66.748,33.374,33.424,33.424,0,0,0,33.374,0Z" transform="translate(66.377 70.873)" fill="#fff"/>
+    <path id="Vector-5" data-name="Vector" d="M7.416,14.839a7.659,7.659,0,0,1-5.266-2.151,7.082,7.082,0,0,1-.89-1.187,4.123,4.123,0,0,1-.667-1.261A4.714,4.714,0,0,1,.148,8.906,10.051,10.051,0,0,1,0,7.423,7.382,7.382,0,0,1,.593,4.6,7.656,7.656,0,0,1,2.151,2.157a7.4,7.4,0,0,1,6.675-2A4.474,4.474,0,0,1,10.235.6a4.123,4.123,0,0,1,1.261.667,7.082,7.082,0,0,1,1.187.89A7.656,7.656,0,0,1,14.239,4.6a7.382,7.382,0,0,1,.593,2.818,7.8,7.8,0,0,1-2.151,5.266c-.371.3-.742.593-1.187.89a4.123,4.123,0,0,1-1.261.667,4.474,4.474,0,0,1-1.409.445A9.087,9.087,0,0,1,7.416,14.839Z" transform="translate(129.416 133.832)" fill="#fff"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Vector)">
+      <path id="Vector-6" data-name="Vector" d="M33.374,0A33.374,33.374,0,1,0,66.748,33.374,33.424,33.424,0,0,0,33.374,0Z" transform="translate(66.38 70.87)" fill="rgba(81,74,157,0.2)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Vector-2)">
+      <path id="Vector-7" data-name="Vector" d="M7.416,14.839a7.659,7.659,0,0,1-5.266-2.151,7.082,7.082,0,0,1-.89-1.187,4.123,4.123,0,0,1-.667-1.261A4.714,4.714,0,0,1,.148,8.906,10.051,10.051,0,0,1,0,7.423,7.382,7.382,0,0,1,.593,4.6,7.656,7.656,0,0,1,2.151,2.157a7.4,7.4,0,0,1,6.675-2A4.474,4.474,0,0,1,10.235.6a4.123,4.123,0,0,1,1.261.667,7.082,7.082,0,0,1,1.187.89A7.656,7.656,0,0,1,14.239,4.6a7.382,7.382,0,0,1,.593,2.818,7.8,7.8,0,0,1-2.151,5.266c-.371.3-.742.593-1.187.89a4.123,4.123,0,0,1-1.261.667,4.474,4.474,0,0,1-1.409.445A9.087,9.087,0,0,1,7.416,14.839Z" transform="translate(129.42 133.83)" fill="rgba(81,74,157,0.2)"/>
+    </g>
+  </g>
+</svg>

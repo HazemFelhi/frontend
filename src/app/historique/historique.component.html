@@ -1,0 +1,126 @@
+
+        
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
+<nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse ">
+    <div class="position-sticky"> 
+        <div class="list-group list-group-flush mx-3 mt-4">
+            <div class="col-1 col-md-auto border-bottom" >
+                <img  class="logo0 " id="logoi" src="assets/icons/logol.png" width="15px" >
+                <p id="logon" class="mt-0">Cumulus</p>
+                </div>
+        </div>
+        <div class="list-group list-group-flush mx-3 mt-4 background">
+            <a href="http://localhost:4200/dashboard"  class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                <i class="fas fa-home fa-lg" style="color: #6595e6;"></i><span class="span-color"  >&nbsp; &nbsp;Dashboard</span>
+            </a>
+            <a href="http://localhost:4200/entreprise/dash" class="list-group-item list-group-item-action py-2 ripple ">
+                <i class="fas fa-building fa-lg" style="color: #6595e6;"></i>   <span class="span-color"  > &nbsp; &nbsp;Profil entreprise</span>
+            </a>
+            <a href="http://localhost:4200/membres"  class="list-group-item list-group-item-action py-2 ripple"><i class="fas fa-user-friends fa-lg" style="color: #6595e6;"></i>
+                <span class="span-color"> &nbsp; &nbsp;Membres</span></a>
+            <a href="http://localhost:4200/support" class="list-group-item list-group-item-action py-2 ripple"><i class="fas fa-question-circle fa-lg" style="color: #6595e6;" ></i><span class="span-color">&nbsp; &nbsp; Support</span></a>
+            <a href="http://localhost:4200/historique" class="list-group-item list-group-item-action py-2 ripple" 
+            [ngClass]="{'active': isHistoriquePage}">
+            <i class="fas fa-history fa-lg" style="color: #6595e6;"></i>
+            <span class="span-color"> &nbsp; &nbsp;Historique</span>
+          </a>
+          
+        </div>
+    </div>
+</nav>
+<!-- Sidebar -->
+<main style="margin-top: 58px; margin-left: 200px;">
+    <div class="container pt-4">
+        <div class="row mx-5 border-bottom">
+
+
+            <h3><strong>Consulter votre historique</strong></h3> <br><br><br>
+
+
+
+            <select class="mt-4 selectb p-2 email"  name="Période " >
+                <option  disabled selected >Période</option>
+                
+              </select><br>
+              <br><br>
+              <ul>
+                <li><a href="#home" style="color: #6595e6;" class="sfpro-bold-dove-gray-24px" ><span>Tout</span></a></li>
+                <li><a href="#news" class="sfpro-bold-dove-gray-24px" >Profil</a></li>
+                <li><a href="#contact" class="sfpro-bold-dove-gray-24px" >Membres</a></li>
+                <li><a href="#about" class="sfpro-bold-dove-gray-24px" >Support</a></li>
+              </ul>
+
+<div class="historique-2">
+          
+            <p class="monitoring valign-text-middle"> 
+              <span 
+                > <br><br>
+
+                <span class="sfpro-light-mountain-mist-24px">Mercredi 17/05/2023<br><br />09:00</span
+                ><span class="sfpro-regular-normal-jaguar-24px"
+                  >&nbsp;&nbsp;Connexion à l&#39;application web&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+                ><span class="sfpro-bold-dove-gray-24px" style="color: #6595e6;" >Annuler<br /></span 
+                > <br><span class="sfpro-light-mountain-mist-24px">09:05</span
+                ><span class="sfpro-light-jaguar-24px">&nbsp;</span
+                ><span class="sfpro-regular-normal-jaguar-24px">
+                  Accès au tableau de bord principal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+                ><span class="sfpro-bold-dove-gray-24px" style="color: #6595e6;" >Annuler<br /></span
+                ><br><span class="sfpro-light-mountain-mist-24px">09:10</span
+                ><span class="sfpro-regular-normal-jaguar-24px"
+                  >&nbsp;&nbsp;Ajout d&#39;un nouvel employé&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+                ><span class="sfpro-bold-blue-24px">Annuler<br /></span
+                ><br><span class="sfpro-light-mountain-mist-24px">09:12</span
+                ><span class="sfpro-light-jaguar-24px">&nbsp;</span
+                ><span class="sfpro-regular-normal-jaguar-24px">
+                  Affichage de la liste des employés&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+                ><span class="sfpro-bold-dove-gray-24px">Annuler</span
+                ><br><span class="sfpro-regular-normal-jaguar-24px"> <br /></span
+                ><span class="sfpro-light-mountain-mist-24px">09:15</span
+                ><span class="sfpro-regular-normal-jaguar-24px"
+                  >&nbsp;&nbsp;Activation de l&#39;employé Mohamed Cherif&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+                ><span class="sfpro-bold-blue-24px">Annuler<br /></span
+                ><br><span class="sfpro-light-mountain-mist-24px">09:20</span
+                ><span class="sfpro-regular-normal-jaguar-24px"
+                  >&nbsp;&nbsp;Suppression de l&#39;employé Salma Lotfi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+                ><span class="sfpro-bold-blue-24px">Annuler<br /></span
+                ><br><span class="sfpro-light-mountain-mist-24px">09:30</span
+                ><span class="sfpro-regular-normal-jaguar-24px"
+                  >&nbsp;&nbsp;Activation du service monitoring pour Mohamed
+                  Cherif&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+                ><span class="sfpro-bold-blue-24px">Annuler<br /></span
+                ><br><span class="sfpro-light-mountain-mist-24px">10:00</span
+                ><span class="sfpro-regular-normal-jaguar-24px"
+                  >&nbsp;&nbsp;Envoi d&#39;une invitation à Aicha Ferah pour rejoindre
+                  l&#39;entreprise&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+                ><span class="sfpro-bold-blue-24px">Annuler<br /></span
+                ><br><span class="sfpro-light-mountain-mist-24px">10:05</span
+                ><span class="sfpro-regular-normal-jaguar-24px"
+                  >&nbsp;&nbsp;Consultation de la liste des invitations en
+                  attente&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+                ><span class="sfpro-bold-dove-gray-24px">Annuler</span
+                ><br><span class="sfpro-regular-normal-jaguar-24px"> <br /></span
+                ><span class="sfpro-light-mountain-mist-24px">10:10</span
+                ><span class="sfpro-light-jaguar-24px">&nbsp;</span
+                ><span class="sfpro-regular-normal-jaguar-24px">
+                  Validation de l&#39;invitation de Sami Mnara&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+                ><span class="sfpro-bold-blue-24px">Annuler<br /></span
+                ><br><span class="sfpro-light-mountain-mist-24px">10:15</span
+                ><span class="sfpro-regular-normal-jaguar-24px"
+                  >&nbsp;&nbsp;Rejet de l&#39;invitation de Ahmed Laaribi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+                ><span class="sfpro-bold-blue-24px">Annuler<br /></span
+                ><br><span class="sfpro-light-mountain-mist-24px">10:20</span
+                ><span class="sfpro-regular-normal-jaguar-24px"
+                  >&nbsp;&nbsp;Ouverture d&#39;un nouveau ticket de support pour un problème de gestion des employés
+                  ticket #4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+                ><span class="sfpro-bold-blue-24px">Annuler<br /></span
+                ><br><span class="sfpro-light-mountain-mist-24px">10:30</span
+                ><span class="sfpro-regular-normal-jaguar-24px"
+                  >&nbsp;&nbsp;Résolution et fermeture automatique du ticket#2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+                ><span class="sfpro-bold-blue-24px">Annuler</span><br>
+              </span>
+            </p>
+          </div>
+       </div></div></main>

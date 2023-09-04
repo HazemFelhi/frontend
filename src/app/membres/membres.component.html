@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
+<nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse ">
+    <div class="position-sticky"> 
+        <div class="list-group list-group-flush mx-3 mt-4">
+            <div class="col-1 col-md-auto border-bottom" >
+                <img  class="logo0 " id="logoi" src="assets/icons/logol.png" width="15px" >
+                <p id="logon" class="mt-0">Cumulus</p>
+                </div>
+        </div>
+        <div class="list-group list-group-flush mx-3 mt-4 background">
+            <a href="http://localhost:4200/dashboard"  class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                <i class="fas fa-home fa-lg" style="color: #6595e6;"></i><span class="span-color"  >&nbsp; &nbsp;Dashboard</span>
+            </a>
+            <a href="http://localhost:4200/entreprise/dash" class="list-group-item list-group-item-action py-2 ripple ">
+                <i class="fas fa-building fa-lg" style="color: #6595e6;"></i>   <span class="span-color"  > &nbsp; &nbsp;Profil entreprise</span>
+            </a>
+            <a href="http://localhost:4200/membres"  class="list-group-item list-group-item-action py-2 ripple" [ngClass]="{'active': isHistoriquePage}"><i class="fas fa-user-friends fa-lg" style="color: #6595e6;"></i>
+                <span class="span-color" > &nbsp; &nbsp;Membres</span></a>
+            <a href="http://localhost:4200/support" class="list-group-item list-group-item-action py-2 ripple"><i class="fas fa-question-circle fa-lg" style="color: #6595e6;" ></i><span class="span-color">&nbsp; &nbsp; Support</span></a>
+            <a href="http://localhost:4200/historique" class="list-group-item list-group-item-action py-2 ripple" 
+           >
+            <i class="fas fa-history fa-lg" style="color: #6595e6;"></i>
+            <span class="span-color"> &nbsp; &nbsp;Historique</span>
+          </a>
+          
+        </div>
+    </div>
+</nav>
+<!-- Sidebar -->
+
+
+  <body style="margin: 0; background: #ffff ;margin-left: 30;"  class="zoom-80">
+    <input type="hidden" id="anPageName" name="page" value="index" />
+    <div class="container-center-horizontal">
+      <div class="index screen">
+        <div class="sidebar-entreprise">
+          <img
+            class="group-190"
+            src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64be6bce2bdc79b0c685fb3c/img/group-190@2x.png"
+            alt="Group 190"
+          />
+          <div class="rectangle-8 rectangle-1"></div>
+          <div class="sidebar-entreprise-item">
+            <img
+              class="house-door-fill"
+              src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64bec869350ff83208ce997c/img/house-door-fill.svg"
+              alt="house-door-fill"
+            />
+          </div>
+         
+        </div>
+        <div class="flex-col">
+         
+          <div class="kubernetes-container" style="margin-top: 0;">
+            <div class="kubernetes-1 valign-text-middle sfpro-bold-jaguar-24px" routerLink="/employe" >Employés</div>
+            <div class="kubernetes valign-text-middle sfpro-bold-blue-24px">Invitations</div>
+          </div>
+          <div class="overlap-group1">
+            <img
+              class="line-4"
+              src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c01eb60a2a004860173322/img/line-4.svg"
+              alt="Line 4"
+            />
+          </div>          
+          
+          <h1 class="grer-les-membres valign-text-middle sfpro-bold-jaguar-32px" ><strong><h3>Gérer les membres</h3></strong></h1>
+          <div  class="flex-row-1" >
+            <input type="text" class="select-base" [(ngModel)]="employee.email">
+            <div class="button-n2" style="background-color: #397BFF;"  (click)="addEmployee()">
+              <div class="button valign-text-middle sfpro-bold-wild-sand-18px accept-button">Inviter</div>
+              
+            </div>   <div *ngIf="isInvitationSent" class="invitation-sent-message">
+              Invitation envoyée
+            </div>
+            
+            <div class="navigation-simple">
+              <div class="group"><div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: #6595e6;">Previous</div></div>
+            
+            
+            
+              <div class="rectangle rectangle-1"></div>
+               <div class="group">
+                <div class="number-1 valign-text-middle number-2 sfprotext-medium-blue-15px" style="color: white ;" routerLink="/membres">1</div>
+              </div>
+
+              
+              <div class="rectangle rectangle-1"></div>
+              <div class="group-2">
+                <div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: #6595e6;" routerLink="/employe"><strong>2</strong></div>
+              </div>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="rectangle rectangle-1"></div>
+
+
+
+
+              <div class="group"><div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: #6595e6;" routerLink="/employes">3</div></div>
+              <div class="rectangle rectangle-1"></div>
+              <div class="group"><div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: #6595e6;">Next</div></div>
+            </div>
+
+
+                      </div>    <!--L partie l fou9ania ta3meel fi post fel invitation mriiiiigla mais c'est pas ca !  -->
+          <div class="group-26993">
+            <div class="kubernetes valign-text-middle sfpro-bold-jaguar-24px"><h4><strong>Invitations</strong></h4></div>
+            <img
+              class="line-4-1"
+              src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c01eb60a2a004860173322/img/line-4-1.svg"
+              alt="Line 4"
+            />
+            <table style="border-collapse: separate; border-spacing: 70px; margin-top:-140PX;">
+              
+              <tr>
+              </tr>
+          
+            
+              <tr *ngFor="let inv of invitationsdetails">
+                 <div *ngIf="inv.isShown" > 
+                <td><h5>{{ inv.email }}</h5></td> 
+                <td><h5>{{ inv.lastName }}</h5></td> 
+                <td><h5>{{ inv.firstName }}</h5></td> 
+
+                <td><h5>{{ inv.mobile }}</h5></td> 
+               
+ 
+
+
+  <div class="flex-row sfpro-regular-normal-jaguar-16px">
+  <div class="button-1" >
+                <div class="button-n2" style="background-color: #397BFF; " ><div class="button valign-text-middle sfpro-bold-wild-sand-18px accept-button"  (click)="acceptInvitation(inv.id_invitation)" >Accepter </div></div>
+  </div> 
+<div class="button valign-text-middle sfpro-bold-blue-18px" style="color:#397BFF ;" (click)="rejectInvitation(inv.id_invitation)" >Rejeter</div>
+  </div> </div>
+
+              </tr>
+          
+            </table>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </body>

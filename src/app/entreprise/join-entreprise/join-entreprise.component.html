@@ -1,0 +1,25 @@
+<div class="container mt-5">
+  <div class="row mt-5">
+    <div class="col-md-7 mt-5">
+      <h5>Veuillez remplir les champs nécessaires</h5>
+      <h4 class="mt-5"><b>Rejoindre Une Entreprise</b></h4>
+      <form>
+        <!-- Add the "name" attribute to the input field -->
+        <input type="number" [(ngModel)]="invitation.entrepriseId" name="entrepriseId" class="mt-4 email p-2 input" placeholder="ID Entreprise*"> 
+      </form>
+      <br>
+      <div class="mt-4">
+        <button class="create-button ms-3 btn" (click)="createInvitation()">Rejoindre</button>
+        <div class="mt-4" *ngIf="invitationSent">
+          <p class="invitation-message">Invitation envoyée</p>
+        </div>
+        <div class="mt-4" *ngIf="invitationNotSent">
+          <p class="invitation-message">Invitation non envoyé</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5 mt-5 ">
+      <img src="assets/icons/add-entreprise.svg" alt="add-entreprise" class="header-img">
+    </div>
+  </div>
+</div>

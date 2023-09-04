@@ -1,0 +1,84 @@
+
+         <!--    <div class="container container-fluid">
+              <h5 class="fw-bold">Veuillez cliquer sur l'une des catégories afin d'afficher les services.</h5>
+              <div class="row">
+                <nav class="navbar navbar-expand ">
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                     <a class="nav-link " *ngFor="let cat of categories"  >{{cat.title}}</a>  
+
+                      <p>{{result}}</p>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="row d-flex align-items-start">
+                 <div class="col-md-3" *ngFor="let service of allSer "> 
+                  <div class=" mt-5">
+                    <div class="text-center">
+                      <img src={{service.imageUrl}}>
+                      <h6 class="mt-3"><b>{{ service.name}}</b></h6>
+                      <p>{{service.description}}</p>
+                      <p class="voir" routerLink="/paquet" >Voir →</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> !-->
+
+            <div class="container container-fluid">
+              <h5 class="fw-bold">Veuillez cliquer sur l'une des catégories afin d'afficher les services.</h5>
+
+              <div class="row">
+                <nav class="navbar navbar-expand">
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link" (click)="getAllServices()"> Tout  &nbsp;&nbsp; </a>
+                      <a class="nav-link" *ngFor="let categorie of categories" (click)="onCategoryClick(categorie)">{{ categorie.nomCategorie }}</a>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            
+              <div *ngIf="selectedCategory">
+                <div class="row d-flex align-items-start">
+                  <div class="col-md-3" *ngFor="let service of services">
+                    <div class="mt-5">
+                      <div class="text-center">
+                        <img [src]="getImageUrl(service.nomService)">
+                        <h6 class="mt-3"><b>{{ service.nomService }}</b></h6>
+                        <p class="voir" routerLink="/paquet">Voir →</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- Display this content when "Tout" is selected -->
+              <div *ngIf="!selectedCategory">
+                <div class="container container-fluid">
+                  <div class="row">
+                    <nav class="navbar navbar-expand ">
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+    
+                          <p>{{result}}</p>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
+                  <div class="row d-flex align-items-start">
+                     <div class="col-md-3" *ngFor="let service of services "> 
+                      <div class=" mt-5">
+                        <div class="text-center">
+                          <img [src]="getImageUrl(service.nomService)">
+                          <h6 class="mt-3"><b>{{ service.nomService}}</b></h6>
+                          <p class="voir" routerLink="/paquet" >Voir →</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>               </div>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            

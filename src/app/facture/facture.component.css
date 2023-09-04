@@ -1,0 +1,7 @@
+
+.horizontal-text {
+  background: linear-gradient( #005dff,#ff8a00);
+  background-clip: text; /* Clip the background to the text */
+  -webkit-background-clip: text; /* For Safari */
+  color: transparent; /* Make the original text transparent */
+}

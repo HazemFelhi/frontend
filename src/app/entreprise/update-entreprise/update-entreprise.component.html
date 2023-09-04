@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  
+  <body style="margin: 0; background: #ffff">
+    <input type="hidden" id="anPageName" name="page" value="index" />
+    <div class="container-center-horizontal">
+      <div class="index screen">
+        <div class="flex-row flex">
+          <img
+            class="logo-with-company-name"
+            src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c2d4fbe884779def32a5ca/img/logo-with-company-name.svg"
+            alt="Logo with Company Name"
+          />
+          <div class="flex-col-1">
+            <div class="navigation sfpro-medium-jaguar-16px">
+                <div class="navigation-item valign-text-middle" routerLink="/accueil" class="btn envoyer"  >Accueil</div>
+                <div class="solutions">
+                  <div class="entreprises valign-text-middle sfpro-medium-jaguar-16px" routerLink="/entreprise/gestion" class="btn envoyer"  >Entreprises</div>
+                </div>
+                <div class="navigation-item valign-text-middle" routerLink="/catalogue" class="btn envoyer" >Services</div>
+              </div>
+           
+              <div class="flags">
+                <img
+                  class="image"
+                  src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64be6bce2bdc79b0c685fb3c/img/image-37@2x.png"
+                  alt="image 37"
+                />
+               
+              </div>
+              <div class="search-1"><div class="search-2 sfprotext-regular-normal-jaguar-16px">Search...</div></div>
+
+            </div> 
+                    <div class="group-27024 zoom-80"> <br><br><br>
+            <h3 class="mettre-jour-les-do valign-text-middle sfpro-bold-jaguar-32px "> <br>             <p class="retournez-en-un-clic sfpro-bold-blue-16px" style="color: #397BFF;" (click)="retour(entreprise.entrepriseId)">Retournez en un clic !</p><br><br>  
+
+             <strong> Mettre à jour les données de {{entreprise.nomEntreprise}} </strong> 
+            </h3> <br> 
+
+
+            <div class="navigation-simple">
+              <div class="group"><div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: #397BFF;">Previous</div></div>
+              <div class="rectangle rectangle-1"></div>
+              <div class="group">
+                <div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: #397BFF;"   routerLink="/entreprise/gestion">1</div>
+              </div>
+              <div class="rectangle rectangle-1"></div>
+              <div class="group-2"><div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: white;" routerLink="/entreprise/gest" ><strong>2</strong></div></div>
+              <div class="rectangle rectangle-1"></div>
+              <div class="group"><div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: #397BFF;" routerLink="/entreprise/update">3</div></div>
+              <div class="rectangle rectangle-1"></div>
+              <div class="group"><div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: #397BFF;">Next</div></div>
+            </div>
+             
+            <div class="group-27023">
+              <div class="group-198 sfprotext-regular-normal-mountain-mist-19px">
+                <div class="flex-col flex">
+                  <div class="input-group">
+                    <div class="input">
+                      <input style=" border: none ;  outline: none;
+                        " class="value sfprotext-regular-normal-mountain-mist-19px" [(ngModel)]="entreprise.nomEntreprise" />
+
+                    </div>
+                  </div>
+                  <div class="input">
+                    <input style=" border: none ;  outline: none;
+                    " class="value sfprotext-regular-normal-mountain-mist-19px" [(ngModel)]="entreprise.nombreEmploye" />
+              
+                  </div>
+                  <div class="select-base">
+                    <input style=" border: none ;  outline: none;
+                    " class="value sfprotext-regular-normal-mountain-mist-19px" [(ngModel)]="entreprise.pays" />
+                  
+                  </div>
+                  <div class="input-group">
+                    <div class="input">                    <input style=" border: none ;  outline: none;
+                      " class="value sfprotext-regular-normal-mountain-mist-19px" [(ngModel)]="entreprise.adresse" />
+  </div>
+                  </div>
+                  <div class="input-group">
+                    <div class="input">                    <input style=" border: none ;  outline: none;
+                      " class="value sfprotext-regular-normal-mountain-mist-19px" [(ngModel)]="entreprise.numero" />
+  </div>
+                  </div>
+                </div>
+                <div class="flex-col flex">
+                  <div class="input-group">
+                    <div class="input">
+                      <input style=" border: none ;  outline: none;
+                      " class="value sfprotext-regular-normal-mountain-mist-19px" [(ngModel)]="entreprise.emailEntreprise" />
+                      </div>
+                  </div>
+                  <div class="select-base">
+                    <input style=" border: none ;  outline: none;
+                    " class="value sfprotext-regular-normal-mountain-mist-19px" [(ngModel)]="entreprise.ville" />
+                    
+                  </div>
+                  <div class="select-base">
+                    <input style=" border: none ;  outline: none;
+                    " class="value sfprotext-regular-normal-mountain-mist-19px" [(ngModel)]="entreprise.codePostal" />
+                   
+                  </div>
+                  <div class="input-group">
+                    <div class="input">                    <input style=" border: none ;  outline: none;
+                      " class="value sfprotext-regular-normal-mountain-mist-19px" [(ngModel)]="entreprise.fixe" />
+  </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="button">
+              <div class="button-1 valign-text-middle sfpro-bold-wild-sand-18px" style="background-color:#397BFF ;padding: 15px 40px ;color:white"  (click)="updateEntreprise()">Mettre à jour</div>
+              <div class="mt-4" *ngIf="invitationSent">
+                <p class="invitation-message">Entreprise bien mise à jour</p>
+              </div>  </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

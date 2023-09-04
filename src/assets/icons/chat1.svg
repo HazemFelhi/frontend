@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="327.16" height="379.307" viewBox="0 0 327.16 379.307">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.122" y1="0.756" x2="-0.166" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4364f7"/>
+      <stop offset="1" stop-color="#9494e0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.18" y1="0.839" x2="0.955" y2="-0.344" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="1.157" y1="0.646" x2="-0.483" y2="0.021" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="-1.538" y1="0.545" x2="1.462" y2="0.479" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="-0.553" y1="0.653" x2="0.997" y2="0.428" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-6" x1="0.425" y1="1.197" x2="0.687" y2="-0.41" xlink:href="#linear-gradient"/>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientTransform="translate(0)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#080c22"/>
+      <stop offset="0.679" stop-color="#100b37"/>
+      <stop offset="0.774" stop-color="#4e01de"/>
+      <stop offset="0.888" stop-color="#030d14"/>
+    </radialGradient>
+    <filter id="Ellipse_189" x="122.809" y="100.696" width="59.59" height="59.589" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.417" result="blur"/>
+      <feFlood flood-color="#7c00ff" flood-opacity="0.851"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_194" x="204.148" y="100.696" width="59.59" height="59.589" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.417" result="blur-2"/>
+      <feFlood flood-color="#7c00ff" flood-opacity="0.851"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Groupe_3000" data-name="Groupe 3000" transform="translate(-446.945 -112.951)">
+    <g id="Groupe_2999" data-name="Groupe 2999">
+      <g id="Groupe_2990" data-name="Groupe 2990">
+        <path id="Tracé_6119" data-name="Tracé 6119" d="M488.884,313.867c49.487,13.555,61.179,9.76,70,23.027,1.013,1.523,6.185,9.3,5.149,19.294a28.7,28.7,0,0,1-8.048,16.8c-16.953,16.411-63.6-3.666-90.318-25.623-5.825-4.788-21.452-17.631-18.3-26.754,1.29-3.737,5.3-5.594,8.17-6.879C468.24,308.048,481.423,311.823,488.884,313.867Z" fill="url(#linear-gradient)"/>
+        <path id="Tracé_6120" data-name="Tracé 6120" d="M754.612,362.71c0,.455,0,.889-.02,1.3a30.57,30.57,0,0,1-1.6,8.669c-13.606,41.571-21.762,63.491-33.2,81.225-1.975,3.061-4.049,6-6.28,8.887-2.923,3.851-6.122,7.6-9.677,11.473-7.9,8.591-19.847,12.481-23.7,13.824-14.08,4.977-26.522,4.068-34.8,4.148H643.9c-8.294-.08-20.716.829-34.8-4.148-3.851-1.343-15.819-5.233-23.7-13.824-21.723-23.638-30.077-43.288-49.154-101.585a30.48,30.48,0,0,1-1.58-8.136,31.978,31.978,0,0,1-.019-3.377c.415-6.971,3.238-13.8,8.255-20.044,8.59-10.7,21.861-16.569,35.586-16.628l66.137-.277,64.932-.256c14.021-.06,27.608,5.825,36.514,16.667a36.273,36.273,0,0,1,8.058,16.766c.138.83.257,1.679.335,2.508C754.553,360.835,754.612,361.763,754.612,362.71Z" fill="url(#linear-gradient-2)"/>
+        <path id="Tracé_6121" data-name="Tracé 6121" d="M748.745,388c-.29-5.511-1.324-9.566-3.392-17.674-2.705-10.609-6.1-15.779-3.894-17.828,1.434-1.333,4.26-.432,4.9-.228,9.7,3.093,12.7,21.285,12.281,32.671-.256,6.969-1.957,14.764-4.511,15.108a2.9,2.9,0,0,1-2.121-.631C749.159,396.895,748.966,392.188,748.745,388Z" fill="#fff"/>
+        <path id="Tracé_6122" data-name="Tracé 6122" d="M755.4,407.452a2.012,2.012,0,1,1-2.012-2.012A2.012,2.012,0,0,1,755.4,407.452Z" fill="#fff"/>
+        <path id="Tracé_6123" data-name="Tracé 6123" d="M710.358,421.666c-.967-51.3-7.907-61.446,2.33-73.651,1.175-1.4,7.18-8.559,17.056-10.386a28.7,28.7,0,0,1,18.391,2.979c20.529,11.63,14.437,62.049.915,93.877-2.949,6.94-10.858,25.556-20.5,25.112-3.949-.181-6.862-3.5-8.906-5.895C710.6,443.113,710.5,429.4,710.358,421.666Z" fill="url(#linear-gradient-3)"/>
+        <path id="Tracé_6124" data-name="Tracé 6124" d="M748.745,378.946c-.29-5.512-1.324-9.566-3.392-17.675-2.705-10.608-6.1-15.779-3.894-17.827,1.434-1.333,4.26-.432,4.9-.228,9.7,3.093,12.7,21.285,12.281,32.67-.256,6.97-1.957,14.765-4.511,15.109a2.9,2.9,0,0,1-2.121-.632C749.159,387.844,748.966,383.137,748.745,378.946Z" fill="#fff"/>
+        <path id="Tracé_6125" data-name="Tracé 6125" d="M755.4,398.4a2.012,2.012,0,1,1-2.012-2.012A2.012,2.012,0,0,1,755.4,398.4Z" fill="#fff"/>
+      </g>
+      <g id="Groupe_2998" data-name="Groupe 2998">
+        <g id="Groupe_2991" data-name="Groupe 2991">
+          <path id="Tracé_6126" data-name="Tracé 6126" d="M639.639,182.791V127.446h8.434v55.345" fill="url(#linear-gradient-4)"/>
+          <path id="Tracé_6127" data-name="Tracé 6127" d="M654.661,123.756a10.8,10.8,0,1,1-10.8-10.805A10.805,10.805,0,0,1,654.661,123.756Z" fill="url(#linear-gradient-5)"/>
+          <path id="Tracé_6128" data-name="Tracé 6128" d="M651.367,119.54a3.294,3.294,0,1,1-3.294-3.294A3.294,3.294,0,0,1,651.367,119.54Z" fill="#fff"/>
+        </g>
+        <g id="Groupe_2992" data-name="Groupe 2992">
+          <path id="Tracé_6129" data-name="Tracé 6129" d="M738.253,227.816a41.635,41.635,0,0,0-52.286-47.383,46.961,46.961,0,0,0-84.222,0,41.619,41.619,0,0,0-52.286,47.383,41.643,41.643,0,0,0,5.794,82.882H732.459a41.643,41.643,0,0,0,5.794-82.882Z" fill="url(#linear-gradient-6)"/>
+          <path id="Tracé_6130" data-name="Tracé 6130" d="M727.97,200.005c.1,3.514-2.768,7.715-6.054,8.075-3.08.337-5.539-2.81-8.075-6.054-2.5-3.2-7.967-11.414-5.79-13.738C710.922,185.223,727.734,191.715,727.97,200.005Z" fill="#fff"/>
+          <circle id="Ellipse_187" data-name="Ellipse 187" cx="2.616" cy="2.616" r="2.616" transform="translate(699.386 183.679)" fill="#fff"/>
+        </g>
+        <g id="Groupe_2997" data-name="Groupe 2997">
+          <g id="Groupe_2994" data-name="Groupe 2994">
+            <circle id="Ellipse_188" data-name="Ellipse 188" cx="29.925" cy="29.925" r="29.925" transform="translate(569.624 213.516)" fill="url(#radial-gradient)"/>
+            <g id="Groupe_2993" data-name="Groupe 2993">
+              <g transform="matrix(1, 0, 0, 1, 446.95, 112.95)" filter="url(#Ellipse_189)">
+                <circle id="Ellipse_189-2" data-name="Ellipse 189" cx="25.543" cy="25.543" r="25.543" transform="translate(127.06 104.95)"/>
+              </g>
+              <path id="Tracé_6131" data-name="Tracé 6131" d="M599.549,217.9a25.543,25.543,0,1,0,25.543,25.542A25.543,25.543,0,0,0,599.549,217.9Zm0,45.928a20.385,20.385,0,1,1,20.385-20.386A20.386,20.386,0,0,1,599.549,263.827Z" fill="#fff"/>
+              <circle id="Ellipse_190" data-name="Ellipse 190" cx="7.417" cy="7.417" r="7.417" transform="translate(599.431 231.926)" fill="#fff"/>
+              <circle id="Ellipse_191" data-name="Ellipse 191" cx="2.44" cy="2.44" r="2.44" transform="translate(587.612 250.525)" fill="#fff"/>
+              <circle id="Ellipse_192" data-name="Ellipse 192" cx="3.172" cy="3.172" r="3.172" transform="translate(596.522 254.406)" fill="#fff"/>
+            </g>
+          </g>
+          <g id="Groupe_2996" data-name="Groupe 2996">
+            <circle id="Ellipse_193" data-name="Ellipse 193" cx="29.925" cy="29.925" r="29.925" transform="translate(650.964 213.516)" fill="url(#radial-gradient)"/>
+            <g id="Groupe_2995" data-name="Groupe 2995">
+              <g transform="matrix(1, 0, 0, 1, 446.95, 112.95)" filter="url(#Ellipse_194)">
+                <circle id="Ellipse_194-2" data-name="Ellipse 194" cx="25.543" cy="25.543" r="25.543" transform="translate(208.4 104.95)"/>
+              </g>
+              <path id="Tracé_6132" data-name="Tracé 6132" d="M680.889,217.9a25.543,25.543,0,1,0,25.543,25.542A25.543,25.543,0,0,0,680.889,217.9Zm0,45.928a20.385,20.385,0,1,1,20.385-20.386A20.385,20.385,0,0,1,680.889,263.827Z" fill="#fff"/>
+              <circle id="Ellipse_195" data-name="Ellipse 195" cx="7.417" cy="7.417" r="7.417" transform="translate(680.771 231.926)" fill="#fff"/>
+              <circle id="Ellipse_196" data-name="Ellipse 196" cx="2.44" cy="2.44" r="2.44" transform="translate(668.952 250.525)" fill="#fff"/>
+              <circle id="Ellipse_197" data-name="Ellipse 197" cx="3.172" cy="3.172" r="3.172" transform="translate(677.862 254.406)" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

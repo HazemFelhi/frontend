@@ -1,0 +1,126 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
+<nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse ">
+    <div class="position-sticky"> 
+        <div class="list-group list-group-flush mx-3 mt-4">
+            <div class="col-1 col-md-auto border-bottom" >
+                <img  class="logo0 " id="logoi" src="assets/icons/logol.png" width="15px" >
+                <p id="logon" class="mt-0">Cumulus</p>
+                </div>
+        </div>
+        <div class="list-group list-group-flush mx-3 mt-4 background">
+            <a href="http://localhost:4200/dashboard"  class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                <i class="fas fa-home fa-lg" style="color: #6595e6;"></i><span class="span-color"  >&nbsp; &nbsp;Dashboard</span>
+            </a>
+            <a href="http://localhost:4200/entreprise/dash" class="list-group-item list-group-item-action py-2 ripple "  >
+                <i class="fas fa-building fa-lg" style="color: #6595e6;"></i>   <span class="span-color"  > &nbsp; &nbsp;Profil entreprise</span>
+            </a>
+
+
+           
+
+
+
+
+            <a href="http://localhost:4200/membres" class="list-group-item list-group-item-action py-2 ripple"><i class="fas fa-user-friends fa-lg" style="color: #6595e6;"></i>
+                <span class="span-color"> &nbsp; &nbsp;Membres</span></a>
+            <a href="http://localhost:4200/support" class="list-group-item list-group-item-action py-2 ripple"><i class="fas fa-question-circle fa-lg" style="color: #6595e6;" ></i><span class="span-color">&nbsp; &nbsp; Support</span></a>
+            <a href="http://localhost:4200/historique" class="list-group-item list-group-item-action py-2 ripple">
+                <i class="fas fa-history fa-lg" style="color: #6595e6;" ></i><span class="span-color"> &nbsp; &nbsp;Historique</span>
+            </a>
+        </div>
+    </div>
+</nav>
+<!-- Sidebar -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+  
+  <body style="margin: 0; background: #ffff;margin-left: 700px;">
+    <input type="hidden" id="anPageName" name="page" value="index" />
+    <div class="container-center-horizontal">
+      <div class="index screen">
+        <div class="flex-row flex">
+         
+          <div class="flex-col-1">
+           
+           
+            </div> 
+                    <div class="group-27024 zoom-80"> <br><br><br>
+            <h3 class="mettre-jour-les-do valign-text-middle sfpro-bold-jaguar-32px "> <br>             <p class="retournez-en-un-clic sfpro-bold-blue-16px" style="color: #397BFF;" routerLink="/entreprise/dash">Retournez en un clic !</p><br><br>  
+
+             <strong> Mettre à jour les données de {{[entreprise.nomEntreprise]}} </strong>
+            </h3> <br>
+            <div class="group-27023">
+              <div class="group-198 sfprotext-regular-normal-mountain-mist-19px">
+                <div class="flex-col flex">
+                  <div class="input-group">
+                    <div class="input">
+                      <input style=" border: none ;  outline: none;
+                        " class="value sfprotext-regular-normal-mountain-mist-19px" [(ngModel)]="entreprise.nomEntreprise" />
+
+                    </div>
+                  </div>
+                  <div class="input">
+                    <input style=" border: none ;  outline: none;
+                    " class="value sfprotext-regular-normal-mountain-mist-19px" [(ngModel)]="entreprise.nombreEmploye" />
+              
+                  </div>
+                  <div class="select-base">
+                    <input style=" border: none ;  outline: none;
+                    " class="value sfprotext-regular-normal-mountain-mist-19px" [(ngModel)]="entreprise.pays" />
+                  
+                  </div>
+                  <div class="input-group">
+                    <div class="input">                    <input style=" border: none ;  outline: none;
+                      " class="value sfprotext-regular-normal-mountain-mist-19px" [(ngModel)]="entreprise.adresse" />
+  </div>
+                  </div>
+                  <div class="input-group">
+                    <div class="input">                    <input style=" border: none ;  outline: none;
+                      " class="value sfprotext-regular-normal-mountain-mist-19px" [(ngModel)]="entreprise.numero" />
+  </div>
+                  </div>
+                </div>
+                <div class="flex-col flex">
+                  <div class="input-group">
+                    <div class="input">
+                      <input style=" border: none ;  outline: none;
+                      " class="value sfprotext-regular-normal-mountain-mist-19px" [(ngModel)]="entreprise.emailEntreprise" />
+                      </div>
+                  </div>
+                  <div class="select-base">
+                    <input style=" border: none ;  outline: none;
+                    " class="value sfprotext-regular-normal-mountain-mist-19px" [(ngModel)]="entreprise.ville" />
+                    
+                  </div>
+                  <div class="select-base">
+                    <input style=" border: none ;  outline: none;
+                    " class="value sfprotext-regular-normal-mountain-mist-19px" [(ngModel)]="entreprise.codePostal" />
+                   
+                  </div>
+                  <div class="input-group">
+                    <div class="input">                    <input style=" border: none ;  outline: none;
+                      " class="value sfprotext-regular-normal-mountain-mist-19px" [(ngModel)]="entreprise.fixe" />
+  </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="button">
+              <div class="button-1 valign-text-middle sfpro-bold-wild-sand-18px" style="background-color:#397BFF ;padding: 15px 40px ;color:white"  (click)="updateEntreprise()">Mettre à jour</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

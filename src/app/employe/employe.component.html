@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
+<nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse ">
+    <div class="position-sticky"> 
+        <div class="list-group list-group-flush mx-3 mt-4">
+            <div class="col-1 col-md-auto border-bottom" >
+                <img  class="logo0 " id="logoi" src="assets/icons/logol.png" width="15px" >
+                <p id="logon" class="mt-0">Cumulus</p>
+                </div>
+        </div>
+        <div class="list-group list-group-flush mx-3 mt-4 background">
+            <a href="http://localhost:4200/dashboard"  class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                <i class="fas fa-home fa-lg" style="color: #6595e6;"></i><span class="span-color"  >&nbsp; &nbsp;Dashboard</span>
+            </a>
+            <a href="http://localhost:4200/entreprise/dash" class="list-group-item list-group-item-action py-2 ripple ">
+                <i class="fas fa-building fa-lg" style="color: #6595e6;"></i>   <span class="span-color"  > &nbsp; &nbsp;Profil entreprise</span>
+            </a>
+            <a href="http://localhost:4200/membres"  class="list-group-item list-group-item-action py-2 ripple" [ngClass]="{'active': isHistoriquePage}"><i class="fas fa-user-friends fa-lg" style="color: #6595e6;"></i>
+                <span class="span-color" > &nbsp; &nbsp;Membres</span></a>
+            <a href="http://localhost:4200/support" class="list-group-item list-group-item-action py-2 ripple"><i class="fas fa-question-circle fa-lg" style="color: #6595e6;" ></i><span class="span-color">&nbsp; &nbsp; Support</span></a>
+            <a href="http://localhost:4200/historique" class="list-group-item list-group-item-action py-2 ripple" 
+           >
+            <i class="fas fa-history fa-lg" style="color: #6595e6;"></i>
+            <span class="span-color"> &nbsp; &nbsp;Historique</span>
+          </a>
+          
+        </div>
+    </div>
+</nav>
+<!-- Sidebar -->
+
+
+  <body style="margin: 0; background: #ffff ;margin-left: 30;"  class="zoom-80">
+    <input type="hidden" id="anPageName" name="page" value="index" />
+    <div class="container-center-horizontal">
+      <div class="index screen">
+        <div class="sidebar-entreprise">
+          <img
+            class="group-190"
+            src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64be6bce2bdc79b0c685fb3c/img/group-190@2x.png"
+            alt="Group 190"
+          /> 
+          <div class="sidebar-entreprise-item">
+            <img
+              class="house-door-fill"
+              src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64bec869350ff83208ce997c/img/house-door-fill.svg"
+              alt="house-door-fill"
+            />
+          </div>
+         
+        </div>
+        <div class="flex-col">
+         
+          <div class="kubernetes-container" style="margin-top: 0;">
+            <div class="kubernetes-1 valign-text-middle sfpro-bold-blue-24px"  routerLink="/membres">Invitations</div>
+            <div class="kubernetes valign-text-middle sfpro-bold-jaguar-24px" routerLink="/employe" >Employés</div>
+          </div>
+          <div class="overlap-group1">
+            <img
+              class="line-4"
+              src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c01eb60a2a004860173322/img/line-4.svg"
+              alt="Line 4"
+            />
+          </div>          
+          
+          <h1 class="grer-les-membres valign-text-middle sfpro-bold-jaguar-32px" ><strong><h3>Gérer les membres</h3></strong></h1>
+          <div  class="flex-row-1" >
+
+            <input type="text" class="select-base" [(ngModel)]="employee.email">
+
+            <div class="button-n2" style="background-color: #397BFF;"  (click)="addEmployee()">
+              <div class="button valign-text-middle sfpro-bold-wild-sand-18px accept-button" (click)="searchUsers()">Inviter</div>
+              
+            </div>   
+            
+            
+            <div *ngIf="isInvitationSent" class="invitation-sent-message">
+              Invitation envoyée
+            </div>
+
+            <div *ngIf="isInvitationS" class="invitation-sent-message">
+mch mawjoud            </div>
+
+
+
+
+
+
+
+
+
+            <div class="navigation-simple">
+              <div class="group"><div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: #6595e6;">Previous</div></div>
+              <div class="rectangle rectangle-1"></div>
+              <div class="group">
+                <div class="number-1 valign-text-middle number-2 sfprotext-medium-blue-15px" style="color: #6595e6;" routerLink="/membres">1</div>
+              </div>
+              <div class="rectangle rectangle-1"></div>
+              <div class="group-2"><div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: white;" routerLink="/employe"><strong>2</strong></div></div>
+              <div class="rectangle rectangle-1"></div>
+              <div class="group"><div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: #6595e6;" routerLink="/entreprise/membres">3</div></div>
+              <div class="rectangle rectangle-1"></div>
+              <div class="group"><div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: #6595e6;">Next</div></div>
+            </div>
+                      </div>    <!--L partie l fou9ania ta3meel fi post fel invitation mriiiiigla mais c'est pas ca !  -->
+          <div class="group-26993">
+            <img
+            class="line-4-1"
+            src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c01eb60a2a004860173322/img/line-4-1.svg"
+            alt="Line 4"
+          />
+            <table class="custom-table"  style="border-collapse: separate; border-spacing: 40px; margin-top:-140PX;">
+              <!-- le border spacing yna7i l'espace verticale -->
+
+              <tr>
+                <th><h4><strong>Email</strong></h4></th> &nbsp;
+                <th><h4><strong>Nom</strong></h4></th> &nbsp;
+                <th><h4><strong>Prenom</strong></h4></th> &nbsp;
+
+                <th><h4><strong style="margin-left: -220px ! important ">Actions</strong></h4></th>
+                <th ><h4><strong style="margin-left: -340px ! important " >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+Plus</strong></h4></th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </tr>
+              <br> 
+              <!-- Loop through the employees array and display each employee's information -->
+              <tr *ngFor="let emp of employees">
+                <td class="email-cell" > <h5>{{ emp.email }}</h5></td> 
+                <td class="email-cell" > <h5>{{ emp.nom }}</h5></td> 
+                <td class="email-cell" > <h5>{{ emp.prenom }}</h5></td> 
+                <td class="email-cell" > <h5>{{ emp.numTel }}</h5></td> 
+
+
+
+               <td>  <div class="group-27171">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img
+                    class="x-fill"
+                    src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c2bb7a4cff3f834fd24d5e/img/play-circle-fill.svg"
+                    alt="play-circle-fill"
+                  />
+                  <img
+                    class="x-fill"
+                    src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c2bb7a4cff3f834fd24d5e/img/pause-circle-fill.svg"
+                    alt="pause-circle-fill"
+                  />
+                  <img
+                    class="x-fill"
+                    src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c2bb7a4cff3f834fd24d5e/img/trash-fill.svg"
+                    alt="trash-fill"
+                  />  
+                </div> </td>
+              <td>  <div class="group-27028">
+
+                  <div (click)="voirPlus(emp.idEmploye)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Voir</div>
+                 
+               </div> </td>  <br>
+              <!-- <img
+                class="line-25"
+                src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c01eb60a2a004860173322/img/line-4-1.svg"
+                alt="Line 4"
+              />   -->
+         </tr>
+            </table>
+         
+           
+          
+          </div>
+          
+  
+        </div>
+      </div>
+    </div>
+  </body>

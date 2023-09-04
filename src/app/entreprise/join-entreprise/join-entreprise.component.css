@@ -1,0 +1,33 @@
+.email {
+    background-color: transparent; 
+    border: 1px solid #989898;
+   border-radius: 5px;
+  }
+  a {
+    cursor: pointer;
+  }
+  h5 {
+    color: #397BFF;
+    font-weight: bold;
+  }
+
+
+  button.create-button {
+    margin-right: 1cm;
+    background-color: #397BFF;
+    border: solid 1px #397BFF;
+    border-radius: 5px;
+    color: #FFF;
+    width: 120px;
+    padding:  10px; 
+  }
+  .header-img {
+    margin-left: -7rem;   /*  décalage VERS La gauche  de l'image*/
+    margin-top: -7rem; 
+  }
+  
+  .invitation-message {
+    color: #397BFF;
+    font-weight: bold;
+  }
+  

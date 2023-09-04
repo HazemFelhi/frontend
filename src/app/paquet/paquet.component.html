@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html><body >
+  <div   class="abc"style="margin-right: 40px ; background: #ffff">
+    <input type="hidden" id="anPageName" name="page" value="index" />
+    <div class="container-center-horizontal">
+      <div class="index screen">
+       
+        <div class="flex-row-1">
+          <div class="flex-col">
+            <div class="group-110">
+             
+              <p class="retournez-facilement" style="color: rgb(14, 86, 241);">Retournez facilement à nos services en un clic !</p>
+            </div>
+            <div class="group-container">
+              <img
+                class="groupe-2796"
+                src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64bed072a0f4489e95067558/img/groupe-2796@2x.png"
+                alt="Groupe 2796"
+              />
+              <div class="group-27142">
+                <h1 class="virtual-machine valign-text-middle sfpro-bold-jaguar-24px">Virtual Machine</h1>
+                <p class="excuter-des-charges valign-text-middle sfpro-regular-normal-jaguar-20px">
+                  Exécuter des charges de travail diverses
+                </p>
+                <a href="#monitoring">
+                  <div class="group-5">
+                    <div class="en-savoir-plus valign-text-middle" style="color: rgb(0, 0, 0);">En savoir plus</div>
+                    <img
+                      class="icon-outlinearrow-sm-right"
+                      src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64bed072a0f4489e95067558/img/icon-outline-arrow-sm-right.svg"
+                      alt="Icon/Outline/arrow-sm-right"
+                    /></div
+                ></a>
+              </div>
+            </div>
+          </div>
+          <img
+            class="line-3"
+            src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64bed072a0f4489e95067558/img/line-3.svg"
+            alt="Line 3"
+          />
+          <div class="flex-col-1 flex-col-6">
+            <div class="monitoring-3 valign-text-middle sfpro-bold-jaguar-24px" id="monitoring">Vue d’ensemble</div>
+            <div class="group-112">
+              <div class="overlap-group">
+                <img
+                  class="x-3"
+                  src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64bed072a0f4489e95067558/img/x.svg"
+                  alt="X"
+                />
+                <div class="ellipse-22"></div>
+              </div>
+              <p class="surveiller-en-temps valign-text-middle sfpro-regular-normal-jaguar-20px">
+                Surveiller en temps réel les performances de vos applications
+              </p>
+            </div>
+            <div class="group-113">
+              <div class="overlap-group">
+                <img
+                  class="x-3"
+                  src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64bed072a0f4489e95067558/img/x.svg"
+                  alt="X"
+                />
+                <div class="ellipse-22"></div>
+              </div>
+              <p class="dtecter-les-problm valign-text-middle sfpro-regular-normal-jaguar-20px">
+                Détecter les problèmes avant qu&#39;ils n&#39;affectent vos utilisateurs
+              </p>
+            </div>
+            <div class="group-27145">
+              <div class="overlap-group">
+                <img
+                  class="x-3"
+                  src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64bed072a0f4489e95067558/img/x.svg"
+                  alt="X"
+                />
+                <div class="ellipse-22"></div>
+              </div>
+              <p class="surveiller-en-temps valign-text-middle sfpro-regular-normal-jaguar-20px">
+                Surveiller en temps réel les performances de vos applications
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="group-27143">
+          <p class="monitoring-1 valign-text-middle monitoring-3 sfpro-bold-jaguar-24px">
+            Les packs avec le service virtual machine
+          </p>
+          <img
+            class="icon"
+            src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64bed072a0f4489e95067558/img/icon.svg"
+            alt="Icon"
+          />
+        </div>
+        <div class="group-27164 zoom-80 " >
+          <div class="flex-col-2 flex-col-6 "    >
+            <div class="flex-col-3 flex-col-6">
+              <div class="flex-col-4 flex-col-6">
+                <div class="pack-cpo-container sfpro-bold-jaguar-20px" >
+                  <div class="pack-cpo valign-text-middle">Pack</div>
+                  <div class="pack-cpo-1 valign-text-middle">CPO</div>
+                  <div class="pack-cpo-2 valign-text-middle">RAM</div>
+                  <div class="pack-cpo-3 valign-text-middle">Disque</div>
+                  <div class="pack-cpo-4 valign-text-middle">Prix par mois</div> 
+                  <div class="pack-cpo-5 valign-text-middle">Prix par ans</div>
+                </div>
+                <img
+                  class="ligne-2"
+                  src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64bed072a0f4489e95067558/img/ligne-8.svg"
+                  alt="Ligne 8"
+                />
+              </div>
+              <div class="flex-row" *ngFor="let packVm of packVms" >
+                <div class="surname valign-text-middle surname-2 sfpro-regular-normal-jaguar-20px">{{ packVm.nomPack }}</div>
+                <div class="number-1 valign-text-middle sfpro-regular-normal-jaguar-20px">{{ packVm.cpo }}</div>
+                <div class="x4g valign-text-middle sfpro-regular-normal-jaguar-20px">{{ packVm.ram }}g</div>
+                <div class="x50g valign-text-middle sfpro-regular-normal-jaguar-20px">{{ packVm.disque }}g</div>
+                <div class="x4g valign-text-middle sfpro-regular-normal-jaguar-20px">{{ packVm.prixParMois }}</div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="x50g valign-text-middle sfpro-regular-normal-jaguar-20px">{{ packVm.prixParAn }}</div>
+                <div class="button">
+                  <div class="button-1 valign-text-middle sfpro-bold-wild-sand-18px accept-button"
+                       *ngIf="!isAuthenticated"
+                       (click)="log()"
+                       style="background-color: #397BFF;">
+                    Ajouter au panier
+                  </div>
+                  <div class="button-1 valign-text-middle sfpro-bold-wild-sand-18px accept-button"
+     *ngIf="isAuthenticated" [routerLink]="'/panier'"
+     (click)="publishPackVm(packVm)"  style="background-color: #397BFF;" >
+    Ajouter au panier
+</div>
+
+                </div>
+                              </div>
+              
+            </div>
+          
+         
+          </div>
+          <div class="flex-col-5 flex-col-6">
+            
+            <p class="surname-1 valign-text-middle surname-2">
+              Le prix du système d&#39;exploitation augmentera dans le cas où vous aurez besoin d&#39;une licence
+            </p>
+          </div>
+        </div>
+        <div class="group-container-1">
+          <div class="group-27146">
+            <div class="kubernetes valign-text-middle sfpro-bold-jaguar-24px">Prise en main</div>
+            <p class="notre-service-de-mon valign-text-middle sfpro-regular-normal-jaguar-20px">
+              Notre service de monitoring est facile à configurer et à utiliser, avec une interface conviviale et des
+              guides de démarrage rapide pour vous aider à commencer en quelques minutes. Nous offrons également un
+              support technique dédié pour répondre à toutes vos questions et résoudre les problèmes éventuels.
+            </p>
+          </div>
+          <div class="group-27147">
+            <div class="monitoring-3 valign-text-middle sfpro-bold-jaguar-24px">Fonctionnalités</div>
+            <p class="des-tableaux-de-bord valign-text-middle sfpro-regular-normal-jaguar-20px">
+              Des tableaux de bord personnalisables<br />Des alertes en temps réel<br />Des outils de diagnostic<br />Des
+              analyses de tendances<br />Des rapports de performances détaillés
+            </p>
+          </div>
+          <div class="group-27148">
+            <div class="virtual-machine-1 valign-text-middle sfpro-bold-jaguar-24px">Sécurité</div>
+            <p class="nous-utilisons-des-m valign-text-middle sfpro-regular-normal-jaguar-20px">
+              Nous utilisons des mesures de sécurité avancées pour protéger vos données de monitoring, y compris des
+              connexions SSL/TLS sécurisées, un stockage chiffré et des accès contrôlés par des identifiants uniques.
+            </p>
+          </div>
+        </div>
+        <footer class="footer">
+          <img
+            class="group-170"
+            src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64bed072a0f4489e95067558/img/group-170@2x.png"
+            alt="Group 170"
+          />
+          <div class="group-173">
+            <div class="explorer-cumulus valign-text-middle sfpro-bold-jaguar-16px">Explorer Cumulus</div>
+            <div class="flex-container-i3015801226329 flex-container sfpro-regular-normal-jaguar-16px">
+              <div class="text valign-text-middle">
+                <span><span class="sfpro-regular-normal-jaguar-16px">Qui sommes nous ?</span> </span>
+              </div>
+              <div class="text valign-text-middle">
+                <span><span class="sfpro-regular-normal-jaguar-16px">Nos services</span> </span>
+              </div>
+              <div class="text valign-text-middle">
+                <span><span class="sfpro-regular-normal-jaguar-16px">Nos solution</span> </span>
+              </div>
+              <div class="text valign-text-middle">
+                <span><span class="sfpro-regular-normal-jaguar-16px">Contactez nous</span> </span>
+              </div>
+              <div class="text valign-text-middle">
+                <span><span class="sfpro-regular-normal-jaguar-16px">Bien démarrer</span> </span>
+              </div>
+            </div>
+          </div>
+          <div class="group-172">
+            <div class="ressources valign-text-middle sfpro-bold-jaguar-16px">Ressources</div>
+            <div class="flex-container-i3015801226332 flex-container sfpro-regular-normal-jaguar-16px">
+              <div class="text valign-text-middle">
+                <span><span class="sfpro-regular-normal-jaguar-16px">Documentation</span> </span>
+              </div>
+              <div class="text valign-text-middle">
+                <span><span class="sfpro-regular-normal-jaguar-16px">Support technique</span> </span>
+              </div>
+              <div class="text valign-text-middle">
+                <span><span class="sfpro-regular-normal-jaguar-16px">FAQ</span> </span>
+              </div>
+              <div class="text valign-text-middle">
+                <span><span class="sfpro-regular-normal-jaguar-16px">Confidentialité</span> </span>
+              </div>
+              <div class="text valign-text-middle">
+                <span><span class="sfpro-regular-normal-jaguar-16px">Termes et conditions</span> </span>
+              </div>
+            </div>
+          </div>
+          <div class="group-171">
+            <div class="place valign-text-middle sfpro-bold-jaguar-16px">Contact</div>
+            <div class="flex-container-i3015801226335 flex-container sfpro-regular-normal-white-16px">
+              <div class="text valign-text-middle">
+                <span><span class="sfpro-regular-normal-jaguar-16px">(+216) 70 102 400</span> </span>
+              </div>
+              <div class="text valign-text-middle">
+                <span><span class="sfpro-regular-normal-jaguar-16px">contact.otbs@onetech-group.com</span> </span>
+              </div>
+              <div class="text valign-text-middle">
+                <span
+                  ><span class="sfpro-regular-normal-jaguar-16px"
+                    >16, Rue des Entrepreneurs. 2035 Charguia II, Tunisie</span
+                  >
+                </span>
+              </div>
+              <div class="text valign-text-middle">
+                <span><span class="span-1"></span> </span>
+              </div>
+              <div class="text valign-text-middle">
+                <span><span class="span-1">OneTech B.S © 2023 — All Rights Reserved</span> </span>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div> </div>
+  </body>
+</html>

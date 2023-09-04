@@ -1,0 +1,98 @@
+<!-- <body class="page-offset">
+  <div class="container mt-5 outer-div">
+    <div class="inner-div">
+      <h5 class="blue-text">Veuillez remplir les champs nécessaires</h5>
+      <h4 class="mt-4"><b>Bienvenue sur cumulus</b></h4>
+      <div class="row">
+        <div class="col-md-6">
+          <form (ngSubmit)="createEntreprise()">
+            <input type="text" name="nom" id="" class="mt-4 email p-2 input" placeholder="Nom Entreprise*" ><br>
+            <input class="mt-4 email p-2 input" name="nombreEmployes" placeholder="Nombre d'employés*"><br>
+            <select class="mt-4 selectb p-2 email"  id="pays" (change)="miseAJourVilles()">
+              <option value="" disabled selected>Pays*</option>
+              <option *ngFor="let pays of paysList" [value]="pays">{{ pays }}</option>
+            </select><br>
+            <input type="text" name="adresse" id="" class="mt-4 email p-2 input" placeholder="Adresse*"><br>
+            <input type="number" name="numero" id="" class="mt-4 email p-2 input"  placeholder="Numéro*">
+          </form>
+        </div>
+        <div class="col-md-6">
+            <input type="text" name="email" id="" class="mt-4 email p-2 input" placeholder="E-mail Entreprise"><br>
+            <select class="mt-4 selectb p-2 email"  name="pays" >
+              <option value="volvo" disabled selected >Secteur d'activité*</option>
+              <option value="volvo">Informatique et Technologie</option>
+              <option value="saab">Marketing et Publicité</option>
+              <option value="opel">Finance et Services Financiers</option>
+              <option value="audi">Éducation</option>
+            </select><br>
+            <select id="villes" class="mt-4 selectb p-2 email"  id="ville" >
+              <option value="" disabled selected>Ville*</option>
+              <option *ngFor="let ville of villesList" [value]="ville">{{ ville }}</option>
+            </select><br>
+            <input type="number" name="codePostal" id="" class="mt-4 email p-2 input"  placeholder="Code postal*"><br>
+            <input type="number" name="fixe" id="" class="mt-4 email p-2 input"  placeholder="Fixe*">
+        </div>
+      </div>
+      <br>
+      <div class="mt-4">
+        <button class="create-button ms-3 btn" type="submit" (click)="createEntreprise()"  ><h5>Créer</h5></button>
+      </div>
+    </div>
+  </div>
+</body>
+
+ -->
+      <!-- (click)="createEntreprise()" [disabled]="!isFormValid() -->
+      <body class="page-offset">
+        <div class="container mt-5 outer-div">
+          <div class="inner-div">
+            <h5 class="blue-text">Veuillez remplir les champs nécessaires</h5>
+            <h4 class="mt-4"><b>Bienvenue sur cumulus</b></h4>
+            <div class="row">
+              <div class="col-md-6">
+                <form #entrepriseForm="ngForm" (ngSubmit)="createEntreprise(entrepriseForm)">
+                  <input [(ngModel)]="entreprise.nomEntreprise" type="text" name="nom" class="mt-4 email p-2 input" placeholder="Nom Entreprise*">
+                  <br>
+                  <input [(ngModel)]="entreprise.nombreEmploye" name="nombreEmploye" class="mt-4 email p-2 input" placeholder="Nombre d'employés*">
+                  <br>
+                  <select [(ngModel)]="entreprise.pays" name="pays" class="mt-4 selectb p-2 email" id="pays" (change)="miseAJourVilles()">
+                    <option value="" disabled selected>Pays*</option>
+                    <option *ngFor="let pays of paysList" [value]="pays">{{ pays }}</option>
+                  </select>
+                  <br>
+                  <input [(ngModel)]="entreprise.adresse" type="text" name="adresse" class="mt-4 email p-2 input" placeholder="Adresse*">
+                  <br>
+                  <input [(ngModel)]="entreprise.numero" type="number"  name="numero" class="mt-4 email p-2 input" placeholder="Numéro*">
+                </form>
+              </div>
+              <div class="col-md-6">
+                <input [(ngModel)]="entreprise.emailEntreprise" type="text" name="email" class="mt-4 email p-2 input" placeholder="E-mail Entreprise">
+                <br>
+                <select class="mt-4 selectb p-2 email" name="selectedSecteur">
+                  <option value="volvo" disabled selected>Secteur d'activité*</option>
+                  <option value="Informatique et Technologie">Informatique et Technologie</option>
+                  <option value="Marketing et Publicité">Marketing et Publicité</option>
+                  <option value="Finance et Services Financiers">Finance et Services Financiers</option>
+                  <option value="Éducation">Éducation</option>
+                </select>
+                <br>
+                <select [(ngModel)]="entreprise.ville" class="mt-4 selectb p-2 email" id="villes" name="ville">
+                  <option value="" disabled selected>Ville*</option>
+                  <option *ngFor="let ville of villesList" [value]="ville">{{ ville }}</option>
+                </select>
+                <br>
+                <input [(ngModel)]="entreprise.codePostal" type="number"  class="mt-4 email p-2 input" placeholder="Code postal*">
+                <br>
+                <input [(ngModel)]="entreprise.fixe" type="number" name="fixe" class="mt-4 email p-2 input" placeholder="Fixe*">
+              </div>
+            </div>
+            <br>
+            <div class="mt-4">
+              <button class="create-button ms-3 btn" type="submit" [disabled]="!entrepriseForm.valid" (click)="createEntreprise(entrepriseForm)">
+                <h5>Créer</h5>
+              </button>
+            </div>
+          </div>
+        </div>
+      </body>
+      

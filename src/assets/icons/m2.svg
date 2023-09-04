@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="149.828" height="149.834" viewBox="0 0 149.828 149.834">
+  <defs>
+    <filter id="Vector" x="0" y="58.499" width="84.58" height="91.335" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-color="#4364f7"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Groupe_2461" data-name="Groupe 2461" transform="translate(1.5)">
+    <path id="Vector-2" data-name="Vector" d="M104.794,109.985l2.892,23.436a7.381,7.381,0,0,1-11.125,7.268L65.487,122.222a74.031,74.031,0,0,1-10.012-.667,36.051,36.051,0,0,0,8.751-23.436C64.226,77.056,45.982,60,23.436,60A42.149,42.149,0,0,0,.3,66.748,47.011,47.011,0,0,1,0,61.111C0,27.366,29.295,0,65.487,0s65.487,27.366,65.487,61.111C130.973,81.135,120.665,98.861,104.794,109.985Z" transform="translate(17.355 0)" fill="#4364f7"/>
+    <path id="Vector-3" data-name="Vector" d="M81.58,38.12a36.051,36.051,0,0,1-8.751,23.436A41.414,41.414,0,0,1,40.79,76.166l-19.357,11.5a4.639,4.639,0,0,1-6.971-4.524l1.854-14.61A36.994,36.994,0,0,1,0,38.12C0,25.067,6.971,13.572,17.651,6.749A42.149,42.149,0,0,1,40.79,0C63.336,0,81.58,17.057,81.58,38.12Z" transform="translate(0 59.999)" fill="#fff"/>
+    <g transform="matrix(1, 0, 0, 1, -1.5, 0)" filter="url(#Vector)">
+      <path id="Vector-4" data-name="Vector" d="M81.58,38.12a36.051,36.051,0,0,1-8.751,23.436A41.414,41.414,0,0,1,40.79,76.166l-19.357,11.5a4.639,4.639,0,0,1-6.971-4.524l1.854-14.61A36.994,36.994,0,0,1,0,38.12C0,25.067,6.971,13.572,17.651,6.749A42.149,42.149,0,0,1,40.79,0C63.336,0,81.58,17.057,81.58,38.12Z" transform="translate(1.5 60)" fill="rgba(67,100,247,0.2)"/>
+    </g>
+  </g>
+</svg>

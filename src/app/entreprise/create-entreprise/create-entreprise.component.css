@@ -1,0 +1,48 @@
+.cnnt {
+    color: #397BFF;
+    font-weight: bold;
+  }
+  .outer-div
+  {
+    padding: 30px;
+  
+  }
+  .inner-div
+  {
+    margin: 0 auto;
+    width: max-content;
+    height: max-content;
+  }
+  .email {
+    background-color: transparent;
+    border: 1px solid #989898;
+    border-radius: 5px;
+    padding: 10px; /* Augmente la taille interne de la case de texte */
+    margin-bottom: 10px; /* Ajoute de l'espace en bas de chaque case de texte */
+    width: 350px; /* Augmentez la valeur de la largeur selon vos besoins */
+
+  }
+  
+  .selectb {
+    color: gray;
+    padding: 10px; /* Augmente la taille interne de la liste déroulante */
+    margin-bottom: 10px; /* Ajoute de l'espace en bas de chaque liste déroulante */
+    width: 350px; /* Augmentez la valeur de la largeur selon vos besoins */
+
+  }
+  
+  .blue-text {
+    color: blue;
+  }
+  button.create-button {
+    margin-right: 1cm;
+    background-color: #397BFF;
+    border: solid 1px #397BFF;
+    border-radius: 5px;
+    color: #FFF;
+    width: 120px;
+    padding:  15px; 
+  }
+  .page-offset {
+    margin-left: 100px; /* Vous pouvez ajuster la valeur selon vos besoins */
+  }

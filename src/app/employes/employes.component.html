@@ -1,0 +1,255 @@
+ 
+ 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ 
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+ 
+ <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse ">
+     <div class="position-sticky"> 
+         <div class="list-group list-group-flush mx-3 mt-4">
+             <div class="col-1 col-md-auto border-bottom" >
+                 <img  class="logo0 " id="logoi" src="assets/icons/logol.png" width="15px" >
+                 <p id="logon" class="mt-0">Cumulus</p>
+                 </div>
+         </div>
+         <div class="list-group list-group-flush mx-3 mt-4 background">
+             <a href="http://localhost:4200/dashboard"  class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                 <i class="fas fa-home fa-lg" style="color: #6595e6;"></i><span class="span-color"  >&nbsp; &nbsp;Dashboard</span>
+             </a>
+             <a href="http://localhost:4200/entreprise/dash" class="list-group-item list-group-item-action py-2 ripple ">
+                 <i class="fas fa-building fa-lg" style="color: #6595e6;"></i>   <span class="span-color"  > &nbsp; &nbsp;Profil entreprise</span>
+             </a>
+             <a href="http://localhost:4200/membres"  class="list-group-item list-group-item-action py-2 ripple"><i class="fas fa-user-friends fa-lg" style="color: #6595e6;"></i>
+                 <span class="span-color" > &nbsp; &nbsp;Membres</span></a>
+             <a href="http://localhost:4200/support" class="list-group-item list-group-item-action py-2 ripple"><i class="fas fa-question-circle fa-lg" style="color: #6595e6;" ></i><span class="span-color">&nbsp; &nbsp; Support</span></a>
+             <a href="http://localhost:4200/historique" class="list-group-item list-group-item-action py-2 ripple" 
+            >
+             <i class="fas fa-history fa-lg" style="color: #6595e6;"></i>
+             <span class="span-color"> &nbsp; &nbsp;Historique</span>
+           </a>
+           
+         </div>
+     </div>
+ </nav>
+ <!-- Sidebar -->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <body  style="background: #ffff" class="fixed-horizontal" content="width=device-width, initial-scale=1.0">
+    <input type="hidden" id="anPageName" name="page" style="margin-left:600 !important ;"value="index" />
+    <div class="container-center-horizontal" >
+      <div class="index screen">
+        <div class="flex-col">
+          <div class="group-container" >
+            <div class="group-110">
+              <p class="retournez-en-un-clic sfpro-bold-blue-16px" routerLink="/employe">Retournez en un clic !</p>
+            </div>
+          </div>
+          <div class="flex-row">
+            <div class="flex-col-1 flex-col-8">
+              <div class="flex-col-2 flex-col-8">
+                <h1 class="grer-les-services valign-text-middle sfpro-bold-jaguar-32px" >Gérer les services</h1>
+                <div class="group-27167">
+                  <img
+                    class="clip-path-group"
+                    src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c3f5632becfc5db46b9edc/img/clip-path-group@2x.png"
+                    alt="Clip path group"
+                  />
+                  <div class="group-container-1">
+                    <div class="group-27158 sfpro-regular-normal-jaguar-20px">
+                      <div class="ismail valign-text-middle ismail-1">{{ employee.nom }}</div>
+                      <div class="bouaziz valign-text-middle">{{employee.prenom }}</div>
+                    </div>
+                    <div class="group-27123">
+                      <img
+                        class="x-fill"
+                        src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c2bb7a4cff3f834fd24d5e/img/play-circle-fill.svg"
+                        alt="play-circle-fill"
+                      />
+                      <img
+                        class="x-fill"
+                        src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c2bb7a4cff3f834fd24d5e/img/pause-circle-fill.svg"
+                        alt="pause-circle-fill"
+                      />
+                      <img
+                        class="x-fill"
+                        src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c2bb7a4cff3f834fd24d5e/img/trash-fill.svg"
+                        alt="trash-fill"
+                      />
+                    </div>
+                  </div>
+                  <div class="ismail-bgmailcom valign-text-middle ismail-1 sfpro-regular-normal-jaguar-20px">
+                                 {{employee.email}}                  </div>
+                </div>
+              </div> <br><br><br><br><br><br><br>
+              <div class="flex-row-1">
+                <div class="simple-card-container">
+                  <div class="simple-card">
+                    <div class="frame-1">
+                      <img
+                        class="groupe-2796 groupe"
+                        src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c3f5632becfc5db46b9edc/img/groupe-2796@2x.png"
+                        alt="Groupe 2796"
+                      />
+                      <div class="virtual-machine valign-text-middle sfpro-bold-jaguar-24px">Virtual Machine</div>
+                      <div class="nom-pack valign-text-middle sfpro-regular-normal-mountain-mist-18px">Nom Pack</div>
+                      <div class="group-27126">
+                        <div class="fill-container">
+                          <img
+                            class="x-fill"
+                            src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c3f5632becfc5db46b9edc/img/play-circle-fill-1.svg"
+                            alt="play-circle-fill"
+                          />
+                          <img
+                            class="x-fill"
+                            src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c3f5632becfc5db46b9edc/img/pause-circle-fill-1.svg"
+                            alt="pause-circle-fill"
+                          />
+                          <img
+                            class="x-fill"
+                            src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c3f5632becfc5db46b9edc/img/trash-fill-1.svg"
+                            alt="trash-fill"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="simple-card-container">
+                  <div class="simple-card">
+                    <div class="frame-1-1">
+                      <img
+                        class="groupe-2798 groupe"
+                        src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c3f5632becfc5db46b9edc/img/groupe-2798@2x.png"
+                        alt="Groupe 2798"
+                      />
+                      <div class="monitoring-1 valign-text-middle sfpro-bold-jaguar-24px">Monitoring</div>
+                      <div class="nom-pack-4 valign-text-middle sfpro-regular-normal-mountain-mist-18px">Nom Pack</div>
+                      <div class="group-27126">
+                        <div class="fill-container-4">
+                          <img
+                            class="x-fill"
+                            src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c3f5632becfc5db46b9edc/img/play-circle-fill-2.svg"
+                            alt="play-circle-fill"
+                          />
+                          <img
+                            class="x-fill"
+                            src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c3f5632becfc5db46b9edc/img/pause-circle-fill-2.svg"
+                            alt="pause-circle-fill"
+                          />
+                          <img
+                            class="x-fill"
+                            src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c3f5632becfc5db46b9edc/img/trash-fill-2.svg"
+                            alt="trash-fill"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-row-2">
+              <img
+                class="line-3"
+                src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c3f5632becfc5db46b9edc/img/line-3.svg"
+                alt="Line 3"
+              />
+              <div class="group-27132">
+                <div class="group-27131">
+                  <p class="ajouter-votre-employ-des-services valign-text-middle sfpro-bold-jaguar-32px">
+                    <br>                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br> <br>
+                    <br> <br>
+                    <br>
+
+                    Ajouter à votre employé des services
+                  </p>                    <br>
+                  <br>
+                  <br>
+                  <br>
+
+                  <div class="monitoring-container sfpro-bold-jaguar-24px">
+                    <p class="monitoring-2 valign-text-middle">Mettez vos services ici !</p>
+                    <div class="monitoring-3 valign-text-middle">Liste de vos services</div>
+                  </div>
+                  <div class="services-drag-and-drop">
+                    <div class="component-32">
+                      <div class="rectangle-9"></div>
+                      <div class="rectangle-9"></div>
+                      <div class="rectangle-9"></div>
+                      <div class="rectangle-9"></div>
+                    </div>
+                    <div class="component-38-component-20">
+                      <div class="group-27060">
+                        <img
+                          class="group-270"
+                          src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c3f5632becfc5db46b9edc/img/group-27039@2x.png"
+                          alt="Group 27039"
+                        />
+                        <div class="flex-col-3 flex-col-8">
+                          <div class="monitoring-4 sfpro-bold-jaguar-18px">Monitoring</div>
+                          <div class="petite-description sfpro-regular-normal-mountain-mist-18px">Nom Pack</div>
+                        </div>
+                      </div>
+                      <div class="group-2706">
+                        <img
+                          class="group-270"
+                          src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c3f5632becfc5db46b9edc/img/group-27040@2x.png"
+                          alt="Group 27040"
+                        />
+                        <div class="flex-col-4 flex-col-8">
+                          <div class="kubernetes sfpro-bold-jaguar-18px">Kubernetes</div>
+                          <div class="petite-description-5 sfpro-regular-normal-mountain-mist-18px">Nom Pack</div>
+                        </div>
+                      </div>
+                      <div class="group-2706">
+                        <img
+                          class="group-270"
+                          src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c3f5632becfc5db46b9edc/img/group-27040@2x.png"
+                          alt="Group 27041"
+                        />
+                        <div class="flex-col-5 flex-col-8">
+                          <div class="virtual-machine-2 virtual-machine-3 sfpro-bold-jaguar-18px">Virtual Machine</div>
+                          <div class="petite-description-5 sfpro-regular-normal-mountain-mist-18px">Nom Pack</div>
+                        </div>
+                      </div>
+                      <div class="group-2706">
+                        <img
+                          class="group-270"
+                          src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c3f5632becfc5db46b9edc/img/group-27040@2x.png"
+                          alt="Group 27042"
+                        />
+                        <div class="flex-col-6 flex-col-8">
+                          <div class="network-lab sfpro-bold-jaguar-18px">Network Lab</div>
+                          <div class="petite-description-5 sfpro-regular-normal-mountain-mist-18px">Nom Pack</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="button">
+                  <div class="button-1 valign-text-middle sfpro-bold-wild-sand-18px">Confirmer</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>

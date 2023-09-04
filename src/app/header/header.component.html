@@ -1,0 +1,117 @@
+<nav class="navbar  navbar-expand-lg mt-4 " id="navbar">
+  <div class="container-fluid ">
+    <a class="navbar-brand "  href="accueil.html" >
+      <div class="flex-row flex-wrap bd-navbar-nav ">
+        <div class="col-1 col-md-auto "  routerLink="/accueil" >
+        <img  class="logo0 " id="logoi" src="assets/images/logo.svg" width="15px" >
+        <p id="logon" >Cumulus</p>
+        </div>
+        </div>
+    </a>
+
+    <button id="nav-toggle-button"class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse " id="bdNavbar">
+    <ul class="navbar-nav  justify-content-start ms-4 mb-1">
+
+       <li class="nav-item active col-md-auto">
+        <a><button class="nav-link nav-link1  " style="margin-right: 90px;" class="btn envoyer"  routerLink="/accueil">Accueil </button></a>
+        </li>
+
+
+
+
+
+        <li class="nav-item col-md-auto">
+        <a><button class="nav-link nav-link1"  style="margin-right: 90px;"  class="btn envoyer"   routerLink="/catalogue">Catalogue </button></a>
+        </li>
+        <li class="nav-item col-md-auto">
+        <a><button class="nav-link nav-link1"  class="btn envoyer"  style="margin-right: 90px;" routerLink="/apropos">À propos</button></a>
+        </li>
+        <li class="nav-item col-md-auto">
+        <a><button class="nav-link nav-link1"  class="btn envoyer"   routerLink="/contact">Contact</button></a>
+        </li>
+      
+    </ul>
+            
+              <ul class="navbar-nav  w-100 justify-content-end ms-4 mb-3 mt-2">
+                
+              <li class="nav-item">
+
+
+
+                <a class="nav-link ms-1 " >
+                    <div  class="search" title="Recherche"  > <input class="form-control " type="text"[(ngModel)]="searchText" (ngModelChange)="performSearch()"   aria-label="Search" >       
+                </div ><ul *ngIf="searchResults.length > 0">
+                  <li *ngFor="let result of searchResults">{{ result }}</li>
+                </ul>
+                </a>
+
+
+
+
+              </li>
+               
+               
+
+
+
+
+
+
+                <li class="nav-item">
+                <a class="nav-link ms-1 " href="#">
+                    <a class="panier navbar-nav-svg d-inline-block align-text" routerLink="/panier" title="Panier">       
+                </a>
+                </a>
+              </li>
+             
+             
+              <li *ngIf="!isAuthenticated" class="nav-item ">
+                <a class="nav-link ms-1 " >
+                  <a  class="user" title="Connexion"  (click)="log()"></a> 
+                    </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link ms-1 " >
+                  <img src="/assets/icons/logout.png"  class="logout" *ngIf="isAuthenticated" (click)="logout()">
+                   
+                     </a>
+                    </li>                                 
+              
+              <li >
+                 
+              
+
+
+           
+           
+                <li >
+                  <div >
+                  <button class="btn  " data-bs-toggle="dropdown" >
+                  <img src="/assets/icons/francais.png" width="28x" ></button>
+                 <!-- <div class="dropdown-menu">
+                  <a class="dropdown-item p-1"href="#" >
+                  <img src="/assets/icons/anglais.png" width="25px" ></a>
+                  </div> --> </div>
+            <li class="nav-item ms-3" id="ldbtn">
+                    <div id="ball" class="text-center" >
+                        <input type="checkbox" class="checkbox" id="checkbox">
+                       </div>
+                      
+                      
+                      </li>
+
+
+
+      </ul>
+      
+    </div>
+  </div>
+
+
+  
+</nav> 
+

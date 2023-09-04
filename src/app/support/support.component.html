@@ -1,0 +1,148 @@
+
+        
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
+<nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse ">
+    <div class="position-sticky"> 
+        <div class="list-group list-group-flush mx-3 mt-4">
+            <div class="col-1 col-md-auto border-bottom" >
+                <img  class="logo0 " id="logoi" src="assets/icons/logol.png" width="15px" >
+                <p id="logon" class="mt-0">Cumulus</p>
+                </div>
+        </div>
+        <div class="list-group list-group-flush mx-3 mt-4 background">
+            <a href="http://localhost:4200/dashboard"  class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                <i class="fas fa-home fa-lg" style="color: #6595e6;"></i><span class="span-color"  >&nbsp; &nbsp;Dashboard</span>
+            </a>
+            <a href="http://localhost:4200/entreprise/dash" class="list-group-item list-group-item-action py-2 ripple ">
+                <i class="fas fa-building fa-lg" style="color: #6595e6;"></i>   <span class="span-color"  > &nbsp; &nbsp;Profil entreprise</span>
+            </a>
+            <a href="http://localhost:4200/historique"  class="list-group-item list-group-item-action py-2 ripple"><i class="fas fa-user-friends fa-lg" style="color: #6595e6;"></i>
+                <span class="span-color"> &nbsp; &nbsp;Membres</span></a>
+            <a href="http://localhost:4200/support" class="list-group-item list-group-item-action py-2 ripple" [ngClass]="{'active': isHistoriquePage}" ><i class="fas fa-question-circle fa-lg" style="color: #6595e6;"  ></i><span class="span-color">&nbsp; &nbsp; Support</span></a>
+            <a href="http://localhost:4200/historique" class="list-group-item list-group-item-action py-2 ripple" 
+            >
+            <i class="fas fa-history fa-lg" style="color: #6595e6;"></i>
+            <span class="span-color"> &nbsp; &nbsp;Historique</span>
+          </a>
+          
+        </div>
+    </div>
+</nav>
+<!-- Sidebar -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+  
+  </head>
+  <body style="margin-left: -100px ; margin-top: -180px ;">
+    <div class="entreprise-support">
+      <div class="navbar-after-no-logo-sign-in">
+        <div class="navigation-container">
+          <div class="navigation1">
+            <div class="solutions2">
+            </div>
+          </div>
+        </div>
+       
+
+        <div class="icons6">
+
+          <div class="counter4">
+            <div class="min-width4"></div>
+            <div class="div4">4</div>
+          </div>
+        </div>
+        <div class="icons7">
+
+          <div class="counter4">
+            <div class="min-width4"></div>
+            <div class="div4">2</div>
+          </div>
+        </div>
+      </div>
+      <div class="entreprise-support-child"></div>
+      <div class="entreprise-support-item"></div>
+      <div class="grer-vos-tickets-parent">
+        <b class="grer-vos-tickets"><h1>Gérer vos tickets</h1></b> 
+        <div class="tickets">
+          <div class="accodriontitle3">
+            <div class="accordiontext3">
+                <select  style="color: black !important ;" class="ticket-11 mt-4 selectb p-2 email">
+                    <option  ><br><br> Ticket #1 </option>
+                  </select>
+                  
+            </div>
+          </div>
+          <div class="accodriontitle4">
+            <div class="accordiontext3">
+                <select class="ticket-11 mt-4 selectb p-2 email" style="color: black !important ;">
+                    <option value="volvo" style="color: black;"><br><br> Ticket #2 </option>
+                  </select>
+                            </div>
+          </div>
+          <div class="accodriontitle5">
+            <div class="accordiontext3">
+                <select class="ticket-11 mt-4 selectb p-2 email" style="color: black !important ;">
+                    <option value="volvo" style="color: black;"><br><br> Ticket #3 </option>
+                  </select>
+                              </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="besoin-daide"><h1>Besoin d’aide ?</h1></h1>
+      <div class="input-wrapper">
+        <div class="input">
+          <input type="text" style="padding: 35px 200px;     width: 750px;
+          " placeholder="Décrivez votre problématique" >
+        </div>
+      </div> 
+      <div class="button5">  <br><br><br><br><br><br><br><br><br>
+        <b class="button6" class="create-button ms-3 btn" style="background-color: #397BFF ; color: white;" >Envoyer</b>
+      </div>
+      <div class="select-base">
+        <div class="select1"></div>
+        <select class="mt-4 selectb p-2 email"  name="pays" >
+            <option value="volvo" disabled selected >Type de support*</option>
+            <option value="volvo">Métier</option>
+            <option value="saab">Financier</option>
+            <option value="opel">Technique</option>
+            <option value="audi">Autres</option>
+          </select><br>
+    </div>
+      <div class="merci-de-prciser">
+        Merci de préciser le type de support que vous recherchez afin que nous
+        puissions vous orienter vers la bonne ressource.
+      </div>
+      <div class="simple-card">
+        <div class="voici-quelques-exemples-de-pro-parent" style="margin-left: 160px ; margin-top: -50px ;">
+          <div class="voici-quelques-exemples">
+            Voici quelques exemples de problèmes courants :
+          </div>
+          <div class="problmes-de-facturation-container">
+            <p class="problmes-de-facturation">1. Problèmes de facturation</p>
+            <p class="problmes-de-facturation">
+              2. Configuration et déploiement
+            </p>
+            <p class="problmes-de-facturation">3. Problèmes de performances</p>
+            <p class="problmes-de-facturation">
+              4. Sécurité et confidentialité
+            </p>
+            <p class="problmes-de-facturation">
+              5. Intégration et compatibilité
+            </p>
+            <p class="problmes-de-facturation">6. Support technique général</p>
+          </div>
+          <div class="button7">
+            <div class="value">Go somewhere</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+* {
+    overflow-x: hidden;
+}
+.header {
+    background-color: white;
+}
+.footer {
+    background-color: white;
+}

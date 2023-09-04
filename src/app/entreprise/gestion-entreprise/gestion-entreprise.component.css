@@ -1,0 +1,867 @@
+/* screen - index */
+
+.index {
+  background-color: var(--light-background);
+  border: 1px none;
+  position: relative;
+  width: 100%; /* Updated this line to set full width */
+  max-width: 1728px; /* You can set a max width here if needed */
+  margin: 0 auto; /* This will center the .index div if the viewport is wider than its max width */
+}
+
+  .index .grer-les-entreprises {
+    height: 38px;
+    left: 159px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 228px;
+    white-space: nowrap;
+  }
+  
+  .index .line-4 {
+    left: 158px;
+    top: 565px;
+    width: 1233px;
+  }
+  
+  .index .line-8 {
+    left: 158px;
+    top: 823px;
+    width: 1233px;
+  }
+  
+  .index .line-5 {
+    left: 158px;
+    top: 651px;
+    width: 1233px;
+  }
+  
+  .index .line-9 {
+    left: 158px;
+    top: 909px;
+    width: 1233px;
+  }
+  
+  .index .line-6 {
+    left: 158px;
+    top: 737px;
+    width: 1233px;
+  }
+  
+  .index .line-10 {
+    left: 158px;
+    top: 995px;
+    width: 1233px;
+  }
+  
+  .index .line-11 {
+    left: 158px;
+    top: 1081px;
+    width: 1233px;
+  }
+  
+  .index .kubernetes {
+    left: 670px;
+  }
+  
+  .emplacement-1 {
+    top: 593px;
+  }
+  
+  .index .bouazgmailcom-1 {
+    top: 851px;
+  }
+  
+  .index .oueshotmailcom {
+    top: 679px;
+  }
+  
+  .index .oueshotmailcom-1 {
+    top: 937px;
+  }
+  
+  .index .benslimgmailcom {
+    top: 765px;
+  }
+  
+  .index .benslimgmailcom-1 {
+    top: 1023px;
+  }
+  
+  .index .number {
+    height: 30px;
+    left: 671px;
+    letter-spacing: 0;
+    line-height: 30px;
+    position: absolute;
+    top: 593px;
+    white-space: nowrap;
+  }
+  
+  .index .number-1 {
+    height: 30px;
+    left: 670px;
+    letter-spacing: 0;
+    line-height: 30px;
+    position: absolute;
+    top: 851px;
+    white-space: nowrap;
+  }
+  
+  .index .number-2 {
+    height: 30px;
+    left: 671px;
+    letter-spacing: 0;
+    line-height: 30px;
+    position: absolute;
+    top: 679px;
+    white-space: nowrap;
+  }
+  
+  .index .number-3 {
+    height: 30px;
+    left: 670px;
+    letter-spacing: 0;
+    line-height: 30px;
+    position: absolute;
+    top: 937px;
+    white-space: nowrap;
+  }
+  
+  .index .number-4 {
+    height: 30px;
+    left: 671px;
+    letter-spacing: 0;
+    line-height: 30px;
+    position: absolute;
+    top: 765px;
+    white-space: nowrap;
+  }
+  
+  .index .number-5 {
+    height: 30px;
+    left: 670px;
+    letter-spacing: 0;
+    line-height: 30px;
+    position: absolute;
+    top: 1023px;
+    white-space: nowrap;
+  }
+  
+  .index .kubernetes-1 {
+    left: 158px;
+  }
+  
+  .index .kubernetes-2 {
+    left: 424px;
+  }
+  
+  .index .ismail {
+    top: 593px;
+  }
+  
+  .index .ismail-1 {
+    top: 851px;
+  }
+  
+  .index .wejdene {
+    top: 679px;
+  }
+  
+  .index .wejdene-1 {
+    top: 937px;
+  }
+  
+  .index .imen {
+    top: 765px;
+  }
+  
+  .index .imen-1 {
+    top: 1023px;
+  }
+  
+  .index .kubernetes-3 {
+    left: 1011px;
+  }
+  
+  .index .kubernetes-4 {
+    left: 1264px;
+  }
+  
+  .index .group-27028 {
+    align-items: flex-start;
+    display: flex;
+    gap: 30px;
+    height: 30px;
+    left: 1265px;
+    min-width: 130px;
+    position: absolute;
+    top: 594px;
+  }
+  
+  .index .voir-plus {
+    height: 30px;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin-top: 0;
+    min-width: 82px;
+    white-space: nowrap;
+  }
+  
+  .index .icon-outlinearrow-sm-right {
+    align-self: center;
+    height: 16px;
+    width: 16px;
+  }
+  
+  .index .group-27177 {
+    align-items: flex-start;
+    display: flex;
+    gap: 30px;
+    height: 30px;
+    left: 1264px;
+    min-width: 130px;
+    position: absolute;
+    top: 852px;
+  }
+  
+  .index .group-27029 {
+    align-items: flex-start;
+    display: flex;
+    gap: 30px;
+    height: 30px;
+    left: 1265px;
+    min-width: 130px;
+    position: absolute;
+    top: 680px;
+  }
+  
+  .index .group-27178 {
+    align-items: flex-start;
+    display: flex;
+    gap: 30px;
+    height: 30px;
+    left: 1264px;
+    min-width: 130px;
+    position: absolute;
+    top: 938px;
+  }
+  
+  .index .group-27030 {
+    align-items: flex-start;
+    display: flex;
+    gap: 30px;
+    height: 30px;
+    left: 1265px;
+    min-width: 130px;
+    position: absolute;
+    top: 766px;
+  }
+  
+  .index .group-27179 {
+    align-items: flex-start;
+    display: flex;
+    gap: 30px;
+    height: 30px;
+    left: 1264px;
+    min-width: 130px;
+    position: absolute;
+    top: 1024px;
+  }
+  
+  .index .navigation-simple {
+    align-items: flex-start;
+    background-color: var(--desert-storm);
+    border-color: var(--stat-gray-light);
+    border-radius: 4px;
+    display: inline-flex;
+    left: 1190px;
+    overflow: hidden;
+    position: absolute;
+    top: 215px;
+  }
+  
+  .index .group {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 12px;
+    position: relative;
+  }  
+  .index .rectangle {
+    align-self: stretch;
+    background-color: var(--stat-gray-light);
+    position: relative;
+    width: 1px;
+  }
+  
+  .index .number-6 {
+    letter-spacing: -0.24px;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .index .group-2 {
+    align-items: flex-start;
+    background-color: var(--light-blue);
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 12px;
+    position: relative;
+  }
+  
+  .index .x1-1 {
+    color: var(--desert-storm);
+    font-family: var(--font-family-sf_pro_text-medium);
+    font-size: var(--font-size-xs);
+    font-weight: 500;
+  }
+  
+  .index .group-27171 {
+    align-items: flex-start;
+    display: flex;
+    gap: 19px;
+    height: 16px;
+    left: 1011px;
+    min-width: 86px;
+    position: absolute;
+    top: 601px;
+  }
+  
+  .index .x-fill {
+    height: 16px;
+    width: 16px;
+  }
+  
+  .index .group-27180 {
+    align-items: flex-start;
+    display: flex;
+    gap: 19px;
+    height: 16px;
+    left: 1010px;
+    min-width: 86px;
+    position: absolute;
+    top: 859px;
+  }
+  
+  .index .group-27172 {
+    align-items: flex-start;
+    display: flex;
+    gap: 18px;
+    height: 16px;
+    left: 1011px;
+    min-width: 86px;
+    position: absolute;
+    top: 687px;
+  }
+  
+  .index .group-2702 {
+    align-items: flex-start;
+    display: flex;
+    gap: 20px;
+    min-width: 52px;
+  }
+  
+  .index .group-27181 {
+    align-items: flex-start;
+    display: flex;
+    gap: 18px;
+    height: 16px;
+    left: 1010px;
+    min-width: 86px;
+    position: absolute;
+    top: 945px;
+  }
+  
+  .index .group-27173 {
+    align-items: flex-start;
+    display: flex;
+    gap: 18px;
+    height: 16px;
+    left: 1011px;
+    min-width: 86px;
+    position: absolute;
+    top: 780px;
+  }
+  
+  .index .group-27182 {
+    align-items: flex-start;
+    display: flex;
+    gap: 18px;
+    height: 16px;
+    left: 1010px;
+    min-width: 86px;
+    position: absolute;
+    top: 1038px;
+  }
+  
+  .index .filtre-membres {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 63px;
+    left: 407px;
+    position: absolute;
+    top: 353px;
+    width: 200px;
+  }
+  
+  .index .select-group {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    position: relative;
+    width: 100%;
+  }
+  
+  .index .select-base {
+    align-items: center;
+    background-color: var(--light-background);
+    border: 1px solid;
+    border-color: var(--gray);
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px #cbdafc;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    gap: 10px;
+    overflow: hidden;
+    padding: 9px 12px;
+    position: relative;
+  }
+  
+  .index .select {
+    color: var(--background-dark);
+    flex: 1;
+    font-family: var(--font-family-sf_pro_text-regular);
+    font-size: var(--font-size-xxs2);
+    font-weight: 400;
+    height: 20px;
+    letter-spacing: -0.32px;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+  }
+  
+  .index .frame {
+    height: 16px;
+    position: relative;
+    width: 16px;
+  }
+  
+  .index .note {
+    align-self: stretch;
+    color: var(--gray);
+    font-family: var(--font-family-sf_pro_text-regular);
+    font-size: var(--font-size-xs2);
+    font-weight: 400;
+    letter-spacing: -0.15px;
+    line-height: normal;
+    position: relative;
+    color:  grey;
+  }
+  
+  .index .group-182 {
+    align-items: flex-start;
+    display: flex;
+    height: 42px;
+    justify-content: center;
+    left: 159px;
+    min-width: 198px;
+    position: absolute;
+    top: 353px;
+  }
+  
+  .index .search {
+    align-items: center;
+    border: 0.7px solid;
+    border-color: var(--dark-gray);
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px #cbdafc;
+    display: flex;
+    gap: 40px;
+    height: 43.36px;
+    justify-content: center;
+    margin-top: -0.7px;
+    opacity: 0.5;
+    overflow: hidden;
+    padding: 0px 12px;
+    position: relative;
+    width: 199.4px;
+  }
+  
+  .index .trouver-une-entreprise {
+    flex: 1;
+    letter-spacing: -0.32px;
+    line-height: normal;
+    opacity: 0.4;
+    position: relative;
+  }
+  
+  .index .trouver-une-entreprise-1 {
+    left: 159px;
+    letter-spacing: -0.32px;
+    line-height: normal;
+    position: absolute;
+    top: 313px;
+    white-space: nowrap;
+  }
+  
+  .index .navigation {
+    align-items: center;
+    display: inline-flex;
+    gap: 40px;
+    justify-content: center;
+    left: 392px;
+    position: absolute;
+    top: 95px;
+  }
+  
+  .index .navigation-item {
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-top: -1.00px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .index .solutions {
+  }
+  
+  .index .entreprises {
+    height: 24px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+  }
+  
+  .index .logo-with-company-name {
+    height: 31px;
+    left: 159px;
+    position: absolute;
+    top: 92px;
+    width: 96px;
+  }
+  
+  .index .flags {
+    align-items: flex-start;
+    display: flex;
+    gap: 4068px;
+    height: 53px;
+    left: 1390px;
+    min-width: 30px;
+    position: absolute;
+    top: 95px;
+  }
+  
+  .index .image-39 {
+    margin-top: -3909px;
+  }
+  
+  .index .search-1 {
+    align-items: center;
+    border: 0.7px solid;
+    border-color: var(--dark-gray);
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px #cbdafc;
+    display: flex;
+    gap: 40px;
+    height: 43.36px;
+    justify-content: center;
+    left: 1100px;
+    opacity: 0.5;
+    overflow: hidden;
+    padding: 0px 12px;
+    position: absolute;
+    top: 86px;
+    width: 199.4px;
+  }
+  
+  .index .search-2 {
+    flex: 1;
+    letter-spacing: -0.32px;
+    line-height: normal;
+    opacity: 0.4;
+    position: relative;
+  }
+  
+  .index .line-2 {
+    left: 470px;
+    top: 121px;
+    width: 89px;
+  }
+  
+  .index .benslimgmailcom-2 {
+    height: 30px;
+    left: 424px;
+    letter-spacing: 0;
+    line-height: 30px;
+    position: absolute;
+    white-space: nowrap;
+  }
+  
+  .index .bouazgmailcom-2 {
+    height: 30px;
+    left: 424px;
+    letter-spacing: 0;
+    line-height: 30px;
+    position: absolute;
+    white-space: nowrap;
+  }
+  
+  .index .image {
+    height: 23px;
+    object-fit: cover;
+    width: 30px;
+  }
+  
+  .index .imen-2 {
+    height: 30px;
+    left: 158px;
+    letter-spacing: 0;
+    line-height: 30px;
+    position: absolute;
+    white-space: nowrap;
+  }
+  
+  .index .ismail-2 {
+    height: 30px;
+    left: 158px;
+    letter-spacing: 0;
+    line-height: 30px;
+    position: absolute;
+    white-space: nowrap;
+  }
+  
+  .index .kubernetes-5 {
+    height: 36px;
+    letter-spacing: 0;
+    line-height: 36px;
+    position: absolute;
+    top: 501px;
+    white-space: nowrap;
+  }
+  
+  .index .line {
+    height: 1px;
+    object-fit: cover;
+    position: absolute;
+  }
+  
+  .index .oueshotmailcom-2 {
+    height: 30px;
+    left: 424px;
+    letter-spacing: 0;
+    line-height: 30px;
+    position: absolute;
+    white-space: nowrap;
+  }
+  
+  .index .wejdene-2 {
+    height: 30px;
+    left: 158px;
+    letter-spacing: 0;
+    line-height: 30px;
+    position: absolute;
+    white-space: nowrap;
+  }
+  
+  .index .x1-4 {
+    letter-spacing: -0.24px;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  @font-face {
+    font-family: "SF Pro-Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: url("https://fonts.animaapp.com/SFPro-Bold") format("truetype");
+  }
+  @font-face {
+    font-family: "SF Pro-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.animaapp.com/SFPro-Regular") format("truetype");
+  }
+  @font-face {
+    font-family: "SF Pro-Medium";
+    font-style: normal;
+    font-weight: 500;
+    src: url("https://fonts.animaapp.com/SFPro-Medium") format("truetype");
+  }
+  @font-face {
+    font-family: "SF Pro Text-Medium";
+    font-style: normal;
+    font-weight: 500;
+    src: url("https://fonts.animaapp.com/SFProText-Medium") format("opentype");
+  }
+  @font-face {
+    font-family: "SF Pro Text-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.animaapp.com/SFProText-Regular") format("truetype");
+  }
+  
+  
+  .screen a {
+    display: contents;
+    text-decoration: none;
+  }
+  
+  .container-center-horizontal {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container-center-horizontal > * {
+    flex-shrink: 0;
+    pointer-events: auto;
+  }
+  
+  .valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  :root { 
+    --background-dark: #030911;
+    --black: #000000;
+    --dark-gray: #707070;
+    --desert-storm: #f8f8f8;
+    --gray: #989898;
+    --light-background: #f3f3f3;
+    --light-blue: #397bff;
+    --stat-gray-light: #e9ecee;
+   
+    --font-size-l2: 32px;
+    --font-size-m: 20px;
+    --font-size-m2: 24px;
+    --font-size-s2: 16px;
+    --font-size-xs: 15px;
+    --font-size-xs2: 14px;
+    --font-size-xxs2: 13px;
+   
+    --font-family-sf_pro-bold: "SF Pro-Bold", Helvetica;
+    --font-family-sf_pro-medium: "SF Pro-Medium", Helvetica;
+    --font-family-sf_pro-regular: "SF Pro-Regular", Helvetica;
+    --font-family-sf_pro_text-medium: "SF Pro Text-Medium", Helvetica;
+    --font-family-sf_pro_text-regular: "SF Pro Text-Regular", Helvetica;
+  }
+  .sfpro-regular-normal-jaguar-20px {
+    color: var(--background-dark);
+    font-family: var(--font-family-sf_pro-regular);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .sfpro-medium-jaguar-20px {
+    color: var(--background-dark);
+    font-family: var(--font-family-sf_pro-medium);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  .sfpro-bold-jaguar-24px {
+    color: var(--background-dark);
+    font-family: var(--font-family-sf_pro-bold);
+    font-size: var(--font-size-m2);
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  .sfprotext-medium-blue-15px {
+    color: var(--light-blue);
+    font-family: var(--font-family-sf_pro_text-medium);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  .sfprotext-regular-normal-jaguar-16px {
+    color: var(--background-dark);
+    font-family: var(--font-family-sf_pro_text-regular);
+    font-size: var(--font-size-s2);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .sfpro-medium-jaguar-16px {
+    color: var(--background-dark);
+    font-family: var(--font-family-sf_pro-medium);
+    font-size: var(--font-size-s2);
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  .sfpro-bold-jaguar-32px {
+    color: var(--background-dark);
+    font-family: var(--font-family-sf_pro-bold);
+    font-style: normal;
+    font-weight: 700; 
+  }
+  body {
+    margin: 0;
+    background: #ffff;
+  }
+
+
+  /* Add this CSS to set .index to take full width */
+  .index .group-2 {
+    align-items: flex-start;
+    background-color: var(--light-blue);
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 12px;
+    position: relative;
+    background-color: #397BFF;
+  }
+.cdf{
+  margin-top:  540px !important ;
+  margin-left: 130px  !important;
+  border-collapse: collapse; /* Optional, to collapse the borders between cells */
+
+}
+.cdf th,
+.cdf td {
+  padding: 50px; /* Adjust the padding as needed to create the desired spacing */
+  text-align: center; /* Center the content horizontally within each cell */
+}
+.bc {
+  margin-top: -35px !important ;
+}
+.cdf tr:not(:first-child) {
+  border-top: -40px solid transparent; /* Adjust this value to control the vertical spacing between rows */
+}
+.nav-link {
+  
+  font-weight: 400;
+  color: #f3f3f3;
+
+
+}

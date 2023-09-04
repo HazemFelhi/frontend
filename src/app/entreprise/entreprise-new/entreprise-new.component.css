@@ -1,0 +1,49 @@
+button.create-button {
+    margin-right: 1cm;
+    background-color: #397BFF;
+    border: solid 1px #397BFF;
+    border-radius: 5px;
+    color: #FFF;
+    width: 120px;
+    padding:  15px; 
+  }
+  
+  button.join-button {
+    background-color: transparent;
+    border: solid 1px #397BFF;
+    border-radius: 5px;
+    color: #397BFF;
+    width: 120px;
+    padding:  15px; 
+
+  }
+  
+  button.create-button:hover {
+    color: #397BFF;
+    background-color: #FFF;
+  }
+  
+  button.join-button:hover {
+    color: #FFF;
+    background-color: #397BFF;
+  }
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .zoom-80 {
+    /* Applique un zoom de 80% à l'élément */
+    transform: scale(0.8);
+    transform-origin: top left;
+  }
+  .row {
+    margin-left: -4rem; /*  décalage VERS La gauche */
+  }
+
+
+  .header-img {
+    margin-left: -7rem;   /*  décalage VERS La gauche  de l'image*/
+  }
+  
+  

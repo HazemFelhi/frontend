@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <body style="margin: 0 ; margin-right: 40px ; background: #ffff">
+    <input type="hidden" id="anPageName" name="page" value="index" />
+    <div class="container-center-horizontal ">
+      <div class="index screen ">
+        <h1 class="grer-les-entreprises valign-text-middle sfpro-bold-jaguar-32px">Gérer les entreprises</h1>
+        
+        <img
+          class="line-4 line"
+          src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c01eb60a2a004860173322/img/line-4-1.svg"
+          alt="Line 4"
+        />
+        <div class="navigation-simple">
+          <div class="group"><div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: #397BFF;">Previous</div></div>
+          <div class="rectangle rectangle-1"></div>
+          <div class="group">
+            <div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: #397BFF;"   routerLink="/entreprise/gestion">1</div>
+          </div>
+          <div class="rectangle rectangle-1"></div>
+          <div class="group-2"><div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: white;" routerLink="/entreprise/gest" ><strong>2</strong></div></div>
+          <div class="rectangle rectangle-1"></div>
+          <div class="group"><div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: #397BFF;" routerLink="/entreprise/update">3</div></div>
+          <div class="rectangle rectangle-1"></div>
+          <div class="group"><div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: #397BFF;">Next</div></div>
+        </div>
+         
+       
+        <table  class="cdf" >
+          <tr>
+            <th   class="kubernetes-2 valign-text-middle kubernetes-5  bc ">Email</th>
+            <th class="kubernetes valign-text-middle kubernetes-5 sfpro-bold-jaguar-24px bc ">Nbr d’employés</th>
+            <th class="kubernetes-1 valign-text-middle kubernetes-5 sfpro-bold-jaguar-24px bc">Entreprise</th>
+          </tr>
+          <tr   *ngFor="let entreprise of entrepriseData"> 
+            <td >{{ entreprise.nomEntreprise }}</td>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td   >{{ entreprise.emailEntreprise }}</td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td>{{ entreprise.nombreEmploye }}</td>
+            <td>   &nbsp;&nbsp;&nbsp;
+              <img
+                class="x-fill"
+                src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c2bb7a4cff3f834fd24d5e/img/play-circle-fill.svg"
+                alt="play-circle-fill"
+              /> &nbsp;&nbsp;&nbsp;
+              <img
+                class="x-fill"
+                src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c2bb7a4cff3f834fd24d5e/img/pause-circle-fill.svg"
+                alt="pause-circle-fill"
+              /> &nbsp;&nbsp;&nbsp;
+              <img
+                class="x-fill"
+                src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c2bb7a4cff3f834fd24d5e/img/trash-fill.svg"
+                alt="trash-fill"
+              />
+            </td>
+            <td> 
+              <div class="voir-plus valign-text-middle sfpro-medium-jaguar-20px" (click)="voirPlusDetails(entreprise.entrepriseId)" >Voir plus</div>
+              <img
+                class="icon-outlinearrow-sm-right"
+                src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c2bb7a4cff3f834fd24d5e/img/icon-outline-arrow-sm-right.svg"
+                alt="Icon/Outline/arrow-sm-right"
+              />
+           </td>
+          </tr>
+        </table>
+
+        <div class="kubernetes-3 valign-text-middle kubernetes-5 sfpro-bold-jaguar-24px">Actions</div>
+        <div class="kubernetes-4 valign-text-middle kubernetes-5 sfpro-bold-jaguar-24px">+Plus</div>        
+
+        
+      
+       
+      
+    
+      
+      
+     
+       
+      
+       
+        <div class="filtre-membres">
+          <div class="select-group">
+            <div class="select-base">
+              <div class="select valign-text-middle">Value</div>
+              <img
+                class="frame"
+                src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64be6bce2bdc79b0c685fb3c/img/frame.svg"
+                alt="Frame"
+              />
+            </div>
+          </div>
+          <div class="note">Value</div>
+        </div>    
+        
+        
+
+
+
+        <div class="group-182">
+          <div class="search">
+            <div class="trouver-une-entreprise sfprotext-regular-normal-jaguar-16px">Trouver une entreprise</div>
+          </div>
+        </div>
+        <div class="trouver-une-entreprise-1 sfprotext-regular-normal-jaguar-16px">Trouver une entreprise</div>
+        <div class="navigation sfpro-medium-jaguar-16px">
+          <div class="navigation-item valign-text-middle" routerLink="/accueil" class="btn envoyer"  >Accueil</div>
+          <div class="solutions">
+            <div class="entreprises valign-text-middle sfpro-medium-jaguar-16px" routerLink="/entreprise/gestion" class="btn envoyer"  >Entreprises</div>
+          </div>
+          <div class="navigation-item valign-text-middle" routerLink="/catalogue" class="btn envoyer" >Services</div>
+          
+        </div>
+        <img
+          class="logo-with-company-name"
+          src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c2bb7a4cff3f834fd24d5e/img/logo-with-company-name.svg"
+          alt="Logo with Company Name"
+        />
+        <div class="flags">
+          
+          <img
+            class="image"
+            src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64be6bce2bdc79b0c685fb3c/img/image-37@2x.png"
+            alt="image 37"
+          />
+         
+        </div> 
+        
+
+        <img
+        class="image" style ="margin-top: -1140px !important ; margin-left : 1330px !important ;"
+        src="/assets/icons/logout.png"    *ngIf="isAuthenticated" (click)="logout()"    alt="image 37"
+      />
+        <div class="search-1"><div class="search-2 sfprotext-regular-normal-jaguar-16px">Search...</div></div>
+       
+      </div>
+    </div> 
+  </body>
+</html>

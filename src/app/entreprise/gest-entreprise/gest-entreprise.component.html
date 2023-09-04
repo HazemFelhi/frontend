@@ -1,0 +1,287 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+<!DOCTYPE html>
+<html>
+  <body style="margin: 0 ; margin-right: 40px ; background: #ffff">
+    <input type="hidden" id="anPageName" name="page" value="index" />
+    <div class="container-center-horizontal ">
+      <div class="index screen ">
+        
+     
+          
+        <!DOCTYPE html>
+        <html>
+     
+          <body>
+           
+            <div class="admin-des-entreprises-voir-don">
+              
+            
+                <b class="grer-les-entreprises"><h1>Gérer les entreprises </h1></b>
+
+              <div class="ellipse-parent">
+              
+                
+
+                    <h6>Complétude des documents</h6>           
+                    <br> <br> <br> <br>
+
+                     <div>  <br><br><br><br>
+                        <canvas id="myChart1"  ></canvas> 
+                    </div>
+
+
+
+                 <div class="dataset">
+                  <div class="dataset-child"></div>
+                  <div class="doc1">Doc°1</div>
+                </div>
+                <div class="dataset1">
+                  <div class="dataset-item"></div>
+                  <div class="doc1">Doc°2</div>
+                </div>
+                <div class="dataset2">
+                  <div class="dataset-inner"></div>
+                  <div class="doc1">Doc°3</div>
+                </div>
+                <div class="dataset3">
+                  <div class="rectangle-div"></div>
+                  <div class="doc1">Doc°4</div>
+                </div>
+                
+              </div>
+              <b class="kubernetes"><strong><h4> Status des documents de l’entreprise </h4></strong></b>
+              <div class="titre-doc-parent">
+                <div class="accueil" style="color:#397BFF">Titre doc°</div>
+                <div class="file-earmark-check-fill-parent">
+                    <i class="fas fa-file-powerpoint" style="color:#397BFF"></i>        
+                  <div class="accueil" style="color:#397BFF">Validé</div>
+                </div>
+              </div>
+              <div class="titre-doc-group">
+                <div class="accueil" style="color:#000080" >Titre doc°</div>
+                <div class="file-earmark-check-fill-parent">
+                    <i class="fas fa-file-excel" style="color:#000080"></i>
+        
+                  <div class="accueil" style="color:#000080">Rejeté</div>
+                </div>
+              </div>
+              <div class="titre-doc-container">
+                <div class="accueil" style="color: #96989c;">Titre doc°</div>
+                <div class="file-earmark-check-fill-parent">
+                    <i class="fas fa-file" style="color: #96989c;"></i>
+        
+                  <div class="accueil" style="color: #96989c;">Manquant</div>
+                </div>
+              </div>
+              <div class="frame-div">
+                <div class="accueil" style="color: #cfcfec">Titre doc°</div>
+                <div class="file-earmark-check-fill-parent">
+                    <i class="fas fa-file-alt" style="color: #cfcfec" ></i>        
+                  <div class="accueil" style="color: #cfcfec">En cours</div>
+                </div>
+              </div>
+              <div class="group-27171">
+                <img
+                  class="x-fill"
+                  src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c2bb7a4cff3f834fd24d5e/img/play-circle-fill.svg"
+                  alt="play-circle-fill"
+                />
+                <img
+                  class="x-fill"
+                  src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c2bb7a4cff3f834fd24d5e/img/pause-circle-fill.svg"
+                  alt="pause-circle-fill"
+                />
+               
+              </div> 
+              <div class="ismailbgmailcom-parent">
+                <div class="ismailbgmailcom">{{ entreprise.emailEntreprise }}</div>
+                <div class="bouaziz-parent">
+                </div>
+              </div> 
+
+
+              <div class="navigation-simple">
+                <div class="group"><div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: #397BFF;">Previous</div></div>
+                <div class="rectangle rectangle-1"></div>
+                <div class="group">
+                  <div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: #397BFF;"   routerLink="/entreprise/gestion">1</div>
+                </div>
+                <div class="rectangle rectangle-1"></div>
+                <div class="group"><div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: #397BFF;" routerLink="/entreprise/gest" ><strong>2</strong></div></div>
+                <div class="rectangle rectangle-1"></div>
+                <div class="group"><div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: #397BFF;" routerLink="/entreprise/update">3</div></div>
+                <div class="rectangle rectangle-1"></div>
+                <div class="group"><div class="x1-4 valign-text-middle sfprotext-medium-blue-15px" style="color: #397BFF;">Next</div></div>
+              </div>
+               
+
+
+        <div *ngIf="isShown" >
+              <div   class="input-group">
+                <div *ngIf="pdfURL">
+                  <iframe
+                    class="pdf-viewer"
+                    [src]="pdfURL"
+                    width="100%"
+                    height="300px"
+                    frameborder="0"
+                  ></iframe>
+                </div>
+              </div>
+              
+              
+           
+              <div class="button3">
+                <button (click)="changeDocumentStatus(doc.id_document,'valide')" class="" style="background-color: #397BFF ; color:white ;  border: none;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+               ">Valider</button>
+
+              </div>
+              
+
+
+
+
+              
+
+
+
+
+
+
+
+              
+              <div class="button-n21">
+                <button (click)="deleteDocument(doc.id_document)"  class="" style="background-color: white ; color:#397BFF ;  border: none;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+               "><strong>Rejeter</strong></button>
+
+              </div>             </div>
+
+              <div class="parent">
+        
+                <b class="retournez-en-un" routerLink="/entreprise/gestion"  style="color:#397BFF"><h5>Retournez en un clic ! </h5></b>
+                
+              </div>
+              <div class="kubernetes-parent">
+                <div class="line-div"></div>
+                <div class="group-parent">
+                  <div class="monitoring-parent">
+                    <b class="monitoring">Pays</b>
+                    <div class="tunisie">{{ entreprise.pays }}</div>
+                  </div>
+                  <div class="monitoring-group">
+                    <b class="monitoring">Ville</b>
+                    <div class="tunisie">{{ entreprise.ville }}</div>
+                  </div>
+                  <div class="monitoring-container">
+                    <b class="monitoring">Adresse</b>
+                    <div class="tunisie">{{ entreprise.adresse }}</div>
+                  </div>
+                  <div class="group-div">
+                    <b class="monitoring">Code postal</b>
+                    <div class="tunisie">{{ entreprise.codePostal }}</div>
+                  </div>
+                </div>
+                <div class="group-container">
+                  <div class="monitoring-parent1">
+                    <b class="monitoring">Numéro</b>
+                    <div class="tunisie">{{ entreprise.numero }}</div>
+                  </div>
+                  <div class="monitoring-parent2">
+                    <b class="monitoring">Fixe</b>
+                    <div class="tunisie">{{ entreprise.fixe }}</div>
+                  </div>
+                  <div class="monitoring-parent3">
+                    <b class="monitoring">Nombre d’employés</b>
+                    <div class="tunisie">{{ entreprise.nombreEmploye }}</div>
+                  </div>
+                </div>
+                <div class="group-parent1"><img src="assets/icons/batiment.PNG"  style="width : 200px; margin-top: -50px  !important;">
+                  <div class="group-parent2">                
+
+                    <div class="monitoring-parent4">               
+
+                      <b class="monitoring">Nom</b>
+                      <div class="tunisie">{{ entreprise.nomEntreprise }}</div>
+                    </div>
+                    <div class="monitoring-parent5">
+                      <b class="monitoring">Email</b>
+                      <div class="tunisie">{{ entreprise.emailEntreprise }}</div>
+                    </div>
+                  </div>
+                </div> <b >Données de {{ entreprise.nomEntreprise }}</b>         
+
+                <i class="fas fa-edit fa-lg" style="color: #397BFF; margin-left: 900px !important;" (click)="updateDetails(entreprise.entrepriseId)"></i>   &nbsp;&nbsp;
+                <i class="fas fa-trash-alt fa-lg" style="color: #397BFF; " (click)="deleteEnterprise(entreprise.entrepriseId)"></i>
+                
+                <hr/>          </div>
+              <div class="admin-des-entreprises-voir-don-item"></div>
+            </div>
+          </body>
+        </html>
+        
+       
+        
+
+
+       
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="navigation sfpro-medium-jaguar-16px">
+          <div class="navigation-item valign-text-middle" routerLink="/accueil" class="btn envoyer"  >Accueil</div>
+          <div class="solutions">
+            <div class="entreprises valign-text-middle sfpro-medium-jaguar-16px" routerLink="/entreprise/gestion" class="btn envoyer"  >Entreprises</div>
+          </div>
+          <div class="navigation-item valign-text-middle" routerLink="/catalogue" class="btn envoyer" >Services</div>
+        </div>
+        <img
+          class="logo-with-company-name"
+          src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64c2bb7a4cff3f834fd24d5e/img/logo-with-company-name.svg"
+          alt="Logo with Company Name"
+        />
+        <div class="flags">
+          <img
+            class="image"
+            src="https://anima-uploads.s3.amazonaws.com/projects/64be6b246790c1e777e82014/releases/64be6bce2bdc79b0c685fb3c/img/image-37@2x.png"
+            alt="image 37"
+          />
+         
+        </div>
+
+        <img
+        class="image" style ="margin-top: -3130px !important ; margin-left : 1330px !important ;"
+        src="/assets/icons/logout.png"    *ngIf="isAuthenticated" (click)="logout()"    alt="image 37"
+      />
+        <div class="search-1"><div class="search-2 sfprotext-regular-normal-jaguar-16px">Search...</div></div>
+       
+      </div>
+    </div> 
+  </body>
+</html>

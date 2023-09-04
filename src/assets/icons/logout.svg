@@ -1,0 +1,7 @@
+<svg id="vuesax_bulk_logout" data-name="vuesax/bulk/logout" xmlns="http://www.w3.org/2000/svg" width="37.391" height="37.391" viewBox="0 0 37.391 37.391">
+  <g id="logout">
+    <path id="Vector" d="M20.238,8.1V23.042c0,5-3.116,8.117-8.1,8.117H8.1c-4.985,0-8.1-3.116-8.1-8.1V8.1C-.016,3.116,3.1,0,8.086,0h4.051C17.122,0,20.238,3.116,20.238,8.1Z" transform="translate(3.131 3.116)" fill="#0f2087" opacity="0.4"/>
+    <path id="Vector-2" data-name="Vector" d="M16.249.351,21.468,5.57a1.175,1.175,0,0,1,0,1.651L16.249,12.44A1.168,1.168,0,0,1,14.6,10.789l3.225-3.225H1.168a1.168,1.168,0,0,1,0-2.337H17.823L14.6,2a1.156,1.156,0,0,1-.343-.826A1.13,1.13,0,0,1,14.6.351,1.148,1.148,0,0,1,16.249.351Z" transform="translate(12.464 12.3)" fill="#0f2087"/>
+    <path id="Vector-3" data-name="Vector" d="M37.391,0H0V37.391H37.391Z" fill="none" opacity="0"/>
+  </g>
+</svg>
