@@ -1,5 +1,5 @@
 # Use the official Node.js LTS (14.x) image as the base image
-FROM node:14 AS builder
+FROM node:16.20-buster AS builder
 
 # Set the working directory in the container
 WORKDIR /app
